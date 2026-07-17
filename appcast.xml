@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Nori updates</title>
+    <link>https://github.com/quentinhermiteau/Nori-releases</link>
+    <description>Signed update feed for Nori.</description>
+    <language>en</language>
+    <item>
+      <title>Nori 0.1.0</title>
+      <pubDate>Fri, 17 Jul 2026 14:51:08 +0000</pubDate>
+      <sparkle:version>15</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v0.1.0/Nori-0.1.0-arm64.zip" sparkle:edSignature="Q3WhKe1HQri93DuPOKZwPWSV0WAm4pzTPUOEB/27+uHtrtmCYx00YqkMnXSGCj/0d5+zz66GLKXo+1VUdChaDg==" length="2651564" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+  </channel>
+</rss>
+<!-- sparkle-signatures:
+edSignature: 2xsDSIslmFXaN9ZJWi/KnASnPvL5LbtnJehuKxu+XKL46Qqw8yxrdZlYnrGtEFxkqB6cKEtI7wVcdQBYSroDAQ==
+length: 944
+-->
