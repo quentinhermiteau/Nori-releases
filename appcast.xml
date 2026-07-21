@@ -6,16 +6,16 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
-      <title>Nori 0.2.2</title>
-      <pubDate>Tue, 21 Jul 2026 00:07:22 +0000</pubDate>
-      <sparkle:version>18</sparkle:version>
-      <sparkle:shortVersionString>0.2.2</sparkle:shortVersionString>
+      <title>Nori 0.2.3</title>
+      <pubDate>Tue, 21 Jul 2026 00:18:28 +0000</pubDate>
+      <sparkle:version>19</sparkle:version>
+      <sparkle:shortVersionString>0.2.3</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v0.2.2/Nori-0.2.2-arm64.zip" sparkle:edSignature="Q08hBy59mQlTErDMpCu4Nl6fW9s51t0+yMhFYWQeNFZaKP/HfuI+qStaHHFwjQcF05dUsW6Cdr5Ki4UegQ7fDg==" length="3811887" type="application/octet-stream" sparkle:os="macos" />
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v0.2.3/Nori-0.2.3-arm64.zip" sparkle:edSignature="O/F0Z1OdgcMbX+GVauwsg/TC2DShSu5VP2UcupWKmEwoOIiP0w5vGv+biRc1PcEgtFB73ALKL/I6PhELbTqMBA==" length="3815069" type="application/octet-stream" sparkle:os="macos" />
     </item>
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: F3SD+6KtkjXIpp6CdEO7ccP1o3yLXAwDI3HZ2Ms/RCq//TqgsuAmXSnx677tchgzsVI4xHKuiyJD6vhn6L4RDQ==
+edSignature: gbEhu/MXNBhNwu/tQHb/0ZqQ4kx6xZ53FAmIqBy5wgydtKj6CEKdYL2Wb3rELmAiecdvED4YTYIjYCWma33MDA==
 length: 944
 -->
