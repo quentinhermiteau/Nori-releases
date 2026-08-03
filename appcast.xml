@@ -6,16 +6,17 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
-      <title>Nori 0.7.0</title>
-      <pubDate>Tue, 28 Jul 2026 15:56:07 +0000</pubDate>
-      <sparkle:version>29</sparkle:version>
-      <sparkle:shortVersionString>0.7.0</sparkle:shortVersionString>
-      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
-      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v0.7.0/Nori-0.7.0-arm64.zip" sparkle:edSignature="hZN5y0Wi3fgo5why6K0D+Hw+MIZCBtFOvMJtATvLwsBuX5nOsOg8gzBxL4SyUqJxX18/Xl/9VTKQ3UsaQjUGCw==" length="5162722" type="application/octet-stream" sparkle:os="macos" />
+      <title>Nori 0.8.2</title>
+      <pubDate>Mon, 03 Aug 2026 10:10:14 +0000</pubDate>
+      <sparkle:version>33</sparkle:version>
+      <sparkle:shortVersionString>0.8.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v0.8.2/Nori-0.8.2-arm64.zip" sparkle:edSignature="InLpn4b0hoiesgSsVIyvpzFGsR4BwRqiOVOxoc7rK8ZAPMIRzYkXgUJjsBoDZrvhHRrQbQwQXwI3hsDG01a1BQ==" length="5144813" type="application/octet-stream" sparkle:os="macos" />
     </item>
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: QRrWkpSf8WSUQCur2JmBPTk9c74qPj8ZGY5SqNOm8jFBKq2tnr3CiEp3DrB6z6AtOZ1FkeVw+j/IeIhNgMlsBw==
-length: 944
+edSignature: sYoI9Ssc/x7sirbW43JDz8KA7+MDZIIFU921ge3pS95/aO0lJiuzV2WBS91w24vFsxlpE7SlTdNyWhhMQAPLBA==
+length: 1019
 -->
