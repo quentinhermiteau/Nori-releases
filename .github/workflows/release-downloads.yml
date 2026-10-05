@@ -1,0 +1,29 @@
+name: Report release downloads
+
+on:
+  schedule:
+    # Hourly, off the top of the hour when scheduled runs queue up.
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-downloads
+  cancel-in-progress: false
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Send download counters to PostHog
+        run: node scripts/report-release-downloads.mjs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          POSTHOG_PROJECT_TOKEN: ${{ vars.POSTHOG_PROJECT_TOKEN }}
