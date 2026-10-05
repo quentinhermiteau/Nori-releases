@@ -6,17 +6,95 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
-      <title>Nori 1.6.0</title>
-      <pubDate>Tue, 29 Sep 2026 12:05:57 +0000</pubDate>
-      <sparkle:version>51</sparkle:version>
-      <sparkle:shortVersionString>1.6.0</sparkle:shortVersionString>
+      <title>Nori 1.7.0</title>
+      <pubDate>Mon, 05 Oct 2026 09:18:43 +0000</pubDate>
+      <sparkle:version>52</sparkle:version>
+      <sparkle:shortVersionString>1.7.0</sparkle:shortVersionString>
       <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
       <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.6.0/Nori-1.6.0-arm64.zip" sparkle:edSignature="ENDajZql/ZQTYdGaKCnhfaGuptYpif5AGuUjXIotHSRPRwsTUcxVRkwn71guOl9QlTAvdEBWyNrjYRquckcuDg==" length="12844281" type="application/octet-stream" sparkle:os="macos" />
+      <description sparkle:format="markdown"><![CDATA[✦ AI explains commits and diffs, proposes conflict resolutions and summarises requests
+for review; ⌘K searches the whole history; branches and commits drag and drop. This
+release also closes the data-loss and security issues found before the public launch.
+
+### Added
+
+- ✦ Explain for a commit or a diff (whole file or one hunk), ✦ Suggest resolution per conflict hunk, and ✦ Summarise for review in Reviews ▸ Overview (never posted); per-use switches and a shared Max context size in Settings ▸ AI.
+- History search in ⌘K across the whole history, with `author:`, `path:`, `content:`, `regex:`, `before:`, `after:`, `between:` and `hash:` filters, a calendar and value completion; *Show only these in the graph* filters History, 200 per page up to 10,000.
+- File history (⌘⇧H, 100 commits per page up to 2,000, across renames) and blame (⌘⇧B).
+- Drag and drop of branches and commits in the sidebar and the graph: merge, rebase, new branch, cherry-pick, revert or push at the drop point.
+- Checks: a summary bar, required checks listed as Expected, annotations that open their line, GitLab trigger jobs, *Re-run job* and *Re-run failed jobs*, a 30 s refresh while running, counts on the list badge and in the Push menu.
+- An External editor setting (Xcode, VS Code, Cursor, Zed, Sublime Text, Nova, BBEdit, JetBrains IDEs, any app): *Open in <editor>* ⌘⇧E and *Open Repository in <editor>* ⌃⌥E.
+- App-wide zoom, ⌘+ and ⌘− from 80 to 150 %, kept across relaunches.
+- File ▸ Open Repository… and Open Recent; a folder dropped on the Dock icon or given to `open -a Nori` opens as a repository.
+- Nori ▸ Check for Updates…, release notes in the update window, and a Help menu: website, release notes, Report an Issue (on GitHub), keyboard shortcuts, diagnostic report, privacy policy and terms.
+- Acknowledgements for the open-source software Nori includes, in About Nori.
+- Recent crash and hang reports in the exported diagnostic report; nothing is sent.
+
+### Changed
+
+- Nori's bundle identifier is now `app.meetnori.nori` (was `com.nori.desktop`): settings, tabs and recent repositories carry over; macOS asks again for notifications and folder access.
+- Nori checks for updates automatically, once a day, unless Settings ▸ Updates turns it off; installing stays your call.
+- ✦ AI tools run in a private empty folder with their tools off, never inside the repository.
+- Git and its hooks get the login shell's PATH, proxies and SSH agent: nvm, volta, asdf, mise, fnm and MacPorts tools resolve as in Terminal.
+- Automatic fetch gives way to anything you start, waits until the last fetch is one interval old, backs off up to an hour after failures and never posts a notification.
+- Quitting while a push, rebase or other Git action runs asks first.
+- A push refused because the remote has someone else's commits offers Pull, which rebases your commits on theirs, not Force push.
+- Errors stay on screen until dismissed with ✕ or esc.
+- Settings ▸ Shortcuts lists every shortcut, and ⌘K shows the keys the menus actually bind.
+- Reviews says comments are public as soon as you send them, in the composer and in Submit Review.
+- Reviews offers `glab` for GitLab remotes and `gh` for GitHub, connects every signed-in account (github.com and Enterprise side by side), says Merge Request on GitLab, and binds a remote only to an identity on its host, starting on `upstream`.
+- Push & PR from a fork with an `upstream` remote opens the request on the parent; on a GitLab remote it reads Push & MR.
+- Merging asks first when commits were pushed after you opened the request.
+- Reviews waits for a spent rate limit to reset, and backs off up to 15 minutes after repeated failures.
+- Merge bar: Checks block only on required checks the forge names; Approvals count against the required number, `1 of 2`.
+- The Checks tab lists failures first with completion times; GitHub checks are read up to a thousand; GitLab manual jobs count as neutral; Origin says checks are unavailable.
+- An Overview contributor click adds that author to the History filter.
+- Stash is back in the top bar, beside Branch: its panel pops, applies or drops a saved stash even with a clean working copy.
+- Git 2.36 is the minimum version.
+
+### Removed
+
+- Removed syntax colouring for Ada, AutoHotkey v2, gnuplot, nginx, Org and Racket files, and the Aurora X theme: their grammars are GPL-licensed. Those files show as plain text.
+
+### Fixed
+
+- Fixed ✦ actions running a repository's own Claude Code hooks, settings and MCP servers.
+- Fixed Push & PR publishing a file outside the repository when a pull request template was a symbolic link.
+- Fixed Open in Default App running scripts, apps and installers from a repository; they open as text or in Finder.
+- Fixed Force push overwriting commits a background fetch had brought in.
+- Fixed the branch menu's Push sending a branch started from `origin/main` into `main`, and the upstream dialog offering to delete `origin/main`.
+- Fixed interactive rebase dropping commits made after its plan opened.
+- Fixed checkout of a deleted branch wiping edits to a file of the same name, stash Drop, Pop and Apply acting on the wrong stash, and remote branch deletion removing commits pushed since your last fetch.
+- Fixed a branch being deleted when its Undo snapshot could not be saved.
+- Fixed Undo snapshots, discarded untracked files included, leaving the machine with `git push --mirror` and showing in `git log --all`: they now live outside the repository, existing ones move there when it opens, and those of repositories never reopened go after 31 days.
+- Fixed stage and discard acting on the wrong file when a repository's subfolder was opened.
+- Fixed empty diffs and failed partial staging under Git's `color.ui`, `diff.noprefix` or `apply.whitespace`.
+- Fixed a commit or push hanging when a hook left a background process running.
+- Fixed blame on file names outside ASCII.
+- Fixed unknown SSH hosts, an unaccepted Xcode license and missing Command Line Tools being reported as credential failures.
+- Fixed Reviews listing only the first 100 files of a GitHub pull request; up to 3,000 now.
+- Fixed a lost connection leading to a comment, reply, review or merge being sent twice: Nori offers *Check if posted*.
+- Fixed Reviews' Forget keeping the account's cached data and reconnecting it at the next scan.
+- Fixed Reviews and Push & PR for SSH remotes using a `~/.ssh/config` alias or a non-standard SSH port.
+- Fixed one unreadable item (SAML, a missing token permission) blanking a whole Reviews screen.
+- Fixed an unreadable Reviews store locking Reviews out: it is set aside and a fresh one opens.
+- Fixed the open request no longer refreshing after Nori came back from the background, and a hidden tab's Reviews still polling.
+- Fixed "Reconnect required" staying after signing in again, and a new sign-in waiting 30 s after a 401.
+- Fixed GitLab conversations showing the oldest 50 discussions, GitLab lists stopping at 100 requests, and GitHub Changes and Commits stopping at 100.
+- Fixed Origin accounts never connecting.
+- Fixed files with an empty diff showing a loading skeleton forever.
+- Fixed a crash expanding context in GitLab files with accented names.
+- Fixed the status bar tooltip showing credentials stored in a remote URL.
+- Fixed the diff surface keeping every document it drew in memory, and closed tabs staying in memory.
+- Fixed home screen errors not showing, and "git not found" flashing at launch.
+- Fixed tabs on a disconnected drive being forgotten at launch.
+- Fixed VoiceOver reading shortcut symbols as part of button names.
+- Fixed the notification permission prompt appearing at first launch.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.7.0/Nori-1.7.0-arm64.zip" sparkle:edSignature="jdZS10QEU2e1UmtJseVMoFnR1I0Nm6cFaXcc8g5hLg/Akn/qybfcb0ytMUHv7iecxntmYOBZ1Dypgj8ZNVg6Bw==" length="14327711" type="application/octet-stream" sparkle:os="macos" />
     </item>
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: TzG3wYsjj22HnCgNzdBERFgTsaForhbAgnW/Qx2oQsr1SoX7DAuqlOt0T7fSK+a/V1gk9wyX8erbbxzEWKIxAQ==
-length: 1020
+edSignature: Ds1VGIpAEuhFuauOXMfLMF9tqb1VRbOEUsFZjgWublZcDOESHBwXdsCwFy/qh2YbDmxd3MPw0+hQUTCl0JKkCA==
+length: 8798
 -->
