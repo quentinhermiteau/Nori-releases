@@ -6,6 +6,19 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.7.1</title>
+      <pubDate>Mon, 05 Oct 2026 10:00:39 +0000</pubDate>
+      <sparkle:version>53</sparkle:version>
+      <sparkle:shortVersionString>1.7.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[### Changed
+
+- Nori starts a 14-day free Trial on first launch, then needs a License: US$40 once, two Macs, every update included.
+- While purchases are not open yet, Buy says so instead of reporting an error.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.7.1/Nori-1.7.1-arm64.zip" sparkle:edSignature="XoVaJop9bNMHIAW+cQQb9WYMTux2a+DBR8FpXKqqW9bN4E6iYUbP4+BX4PiKRSlbbmyRB/BcZJWRkzDRluUQCA==" length="14327590" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.7.0</title>
       <pubDate>Mon, 05 Oct 2026 09:18:43 +0000</pubDate>
       <sparkle:version>52</sparkle:version>
@@ -95,6 +108,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: Ds1VGIpAEuhFuauOXMfLMF9tqb1VRbOEUsFZjgWublZcDOESHBwXdsCwFy/qh2YbDmxd3MPw0+hQUTCl0JKkCA==
-length: 8798
+edSignature: T9PNuxLshklS+3Aa8KJ2E3QHHUkTedUq+AcJX6Y1QYrXl8rfVZzXSCLeth48oMS7IH+eZVruBRvHVZ3Ef3D0Bg==
+length: 9753
 -->
