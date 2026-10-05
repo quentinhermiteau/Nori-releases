@@ -6,6 +6,19 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.7.3</title>
+      <pubDate>Mon, 05 Oct 2026 13:33:46 +0000</pubDate>
+      <sparkle:version>55</sparkle:version>
+      <sparkle:shortVersionString>1.7.3</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[### Fixed
+
+- The title bar counts the Trial's days left instead of showing Unlock Nori, and shows nothing once a License is active.
+- Pushing to the remote's default branch no longer offers to open a pull request.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.7.3/Nori-1.7.3-arm64.zip" sparkle:edSignature="GzpdJWtnW90SdUdiKTXfpWLPePA9x8oTytXddrny5Z1ZRTK5jhKxPHuhaPODVpdt3s5me7/WhHrnn2eR9jqsDA==" length="14330056" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.7.2</title>
       <pubDate>Mon, 05 Oct 2026 10:22:32 +0000</pubDate>
       <sparkle:version>54</sparkle:version>
@@ -121,6 +134,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 66nbClaP4FFxykIji9odoqRjc7wgVBioumCoYtEMb/QzD3x3bq/kFjCbQ2s3V1CJ8oW/lsUDxWW0YHhoRFchDA==
-length: 10677
+edSignature: 72M4rRI8Idg+efjJ2PGMclm1+6YxP0hyjpT4MSqIbHNdGioevXcDcF/RSMshqYNtiKoPHtnMVYSiVCkAMJ+FAw==
+length: 11636
 -->
