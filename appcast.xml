@@ -6,6 +6,18 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.8.1</title>
+      <pubDate>Wed, 07 Oct 2026 12:13:05 +0000</pubDate>
+      <sparkle:version>58</sparkle:version>
+      <sparkle:shortVersionString>1.8.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[### Fixed
+
+- Buying Nori from the app unlocks this Mac at once: no License Key to paste, no second email.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.8.1/Nori-1.8.1-arm64.zip" sparkle:edSignature="OmCT3sJh8PalGXWJLOHxxNxln0FwBK1beuYv7hEAXs/4vgNaVdFrIiNOpyM1BCYsyxkTcfj0PigUHSdVTNUkBw==" length="10998234" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.8.0</title>
       <pubDate>Wed, 07 Oct 2026 09:50:21 +0000</pubDate>
       <sparkle:version>57</sparkle:version>
@@ -155,6 +167,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 3s5adajGNB/nlbfPufhUi+YHVBqheiIhFXMdGbdSTRvOxk4eGcHWxt7tnnVjtqbly4ElF3njCA9OX42kdctDAg==
-length: 13163
+edSignature: LexzhMI9Q7VqfbmtFSbFDCfWbXv2YPDxPnESRcddFb5G4VgcEW7BGe832SOSyZbEZn7dFz5EMQqWZGKRbmV+Bw==
+length: 14014
 -->
