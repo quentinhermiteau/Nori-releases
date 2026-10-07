@@ -6,6 +6,23 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.9.0</title>
+      <pubDate>Wed, 07 Oct 2026 20:49:42 +0000</pubDate>
+      <sparkle:version>60</sparkle:version>
+      <sparkle:shortVersionString>1.9.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[### Added
+
+- Choose the code font, size and ligatures for file diffs, blame and the inline conflict resolver in Settings ▸ Diff. Nori includes familiar monospaced fonts and can use fonts installed on this Mac.
+- Show author pictures in History and commit details, with initials as the fallback. Settings ▸ Appearance offers None, Initials and Avatar; pictures load only when Avatar is selected.
+
+### Changed
+
+- The ambient background follows the open repository's marker color, with a smooth transition when switching repositories.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.9.0/Nori-1.9.0-arm64.zip" sparkle:edSignature="+SYIU9TlallQywwzpWR03H4DlUzbZUmyXZwReb5Ja/2mmi0/6SqJ18sX826sI9+ecXU8Lm7ey52gdJHV54h8Bg==" length="12887772" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.8.1</title>
       <pubDate>Wed, 07 Oct 2026 12:13:05 +0000</pubDate>
       <sparkle:version>58</sparkle:version>
@@ -167,6 +184,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: LexzhMI9Q7VqfbmtFSbFDCfWbXv2YPDxPnESRcddFb5G4VgcEW7BGe832SOSyZbEZn7dFz5EMQqWZGKRbmV+Bw==
-length: 14014
+edSignature: CCKz4DqGCqOGZgKHYW4Xv71JTuI+2oI4hXpyb1nTnjvlGDNdgg2vJaLbh1/TeeuLBXOMFwcxjt6tF0TL4lSgAg==
+length: 15295
 -->
