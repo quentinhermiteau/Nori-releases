@@ -6,6 +6,27 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.8.0</title>
+      <pubDate>Wed, 07 Oct 2026 09:50:21 +0000</pubDate>
+      <sparkle:version>57</sparkle:version>
+      <sparkle:shortVersionString>1.8.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[Nori holds a fifth of the memory it did: on git/git (82,000 commits), 99 MB at rest instead of 523 MB.
+
+### Changed
+
+- The sidebar builds only the branch and tag rows on screen: −180 MB on a repository with 1,000 tags.
+- The diff page loads when a diff is about to open and is released 3 minutes after the last one closes: no WebKit process until then, −120 MB at rest.
+- The ambient background is drawn from small images (−80 MB), and the History graph keeps its colours and edges in a fraction of the space (−50 MB on wide graphs).
+- The app is 31 MB installed instead of 57, and an 11 MB download instead of 14.
+
+### Fixed
+
+- Updating no longer asks for keychain access several times at launch: licensing state lives in a private file, and this update asks at most once.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.8.0/Nori-1.8.0-arm64.zip" sparkle:edSignature="X6iNEhFNoeF2HPdxvM92OXFoC+FhALRxyXBhtbPLzgvwMN+QDyJRerTEsCQaz/Je27QAS7VQlADEZ+b5IYeBCQ==" length="10997425" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.7.3</title>
       <pubDate>Mon, 05 Oct 2026 13:33:46 +0000</pubDate>
       <sparkle:version>55</sparkle:version>
@@ -134,6 +155,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 72M4rRI8Idg+efjJ2PGMclm1+6YxP0hyjpT4MSqIbHNdGioevXcDcF/RSMshqYNtiKoPHtnMVYSiVCkAMJ+FAw==
-length: 11636
+edSignature: 3s5adajGNB/nlbfPufhUi+YHVBqheiIhFXMdGbdSTRvOxk4eGcHWxt7tnnVjtqbly4ElF3njCA9OX42kdctDAg==
+length: 13163
 -->
