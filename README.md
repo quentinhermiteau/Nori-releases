@@ -3,7 +3,7 @@
 **A fast, native Git client for Mac.** Written in Swift for Apple silicon, with
 every update included in a single purchase.
 
-[Website](https://meetnori.app) · [Download](https://meetnori.app/download) · [Pricing](https://meetnori.app/pricing) · [Compared with other clients](https://meetnori.app/compare) · [Release notes](https://github.com/quentinhermiteau/Nori-releases/releases)
+[Website](https://meetnori.app) · [Download](https://meetnori.app/download) · [Pricing](https://meetnori.app/pricing) · [Compared with other clients](https://meetnori.app/compare) · [Release notes](https://meetnori.app/changelog)
 
 [![Nori on macOS: a multi-branch commit graph, the sidebar with the current branch, and the working copy with a commit message ready](https://meetnori.app/assets/nori-app-demo.webp)](https://meetnori.app)
 
