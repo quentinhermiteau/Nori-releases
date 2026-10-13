@@ -6,6 +6,37 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.10.0</title>
+      <pubDate>Tue, 13 Oct 2026 10:42:56 +0000</pubDate>
+      <sparkle:version>62</sparkle:version>
+      <sparkle:shortVersionString>1.10.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[Nori is now signed and notarized by Apple, so it opens without the Open Anyway step.
+
+### Added
+
+- ⌘-click a relative import in a diff to open that file: changed files open in their diff, the others in a full-file preview.
+- Open a worktree in your selected editor from its context menu in the sidebar.
+- Settings ▸ License offers Unlock Nori… or Buy Nori… when you have no License, so the title-bar badge is no longer the only way in.
+- Dragging a commit or branch tip on the graph draws a tether to the pointer and glides it onto the drop target.
+- Syntax themes and code fonts preview in Settings ▸ Diff as you move through the menus; nothing is saved until you pick one.
+- Nori offers to move itself to Applications when it runs from a place where it cannot update, such as straight from the disk image.
+
+### Changed
+
+- The update window shows the notes of every version between yours and the update.
+- Review diffs scroll as one continuous surface across files, with discussions inline.
+- ✦ A usage-limit or spend-cap refusal from your AI CLI is explained, with a hint to retry or switch tool.
+- Buy Nori opens Checkout directly after a Trial, with no second email link, and the unlock sheet says where the verification link went.
+- Graph lanes start at their branch tips, and commit details align the author's picture with their name.
+
+### Fixed
+
+- Unstaging and discarding in a repository with no first commit work again with Git 2.54, which words its error differently.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.10.0/Nori-1.10.0-arm64.zip" sparkle:edSignature="jNbcob6GNyh3ezL7f4Ncv5Vus7tlsMFyCMl+6Q2lZh5/0NKJv2yp+tCbMbd0eFTGhyGdbkmHbftVelVW7JQ+DQ==" length="13000118" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.9.0</title>
       <pubDate>Wed, 07 Oct 2026 20:49:42 +0000</pubDate>
       <sparkle:version>60</sparkle:version>
@@ -184,6 +215,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: CCKz4DqGCqOGZgKHYW4Xv71JTuI+2oI4hXpyb1nTnjvlGDNdgg2vJaLbh1/TeeuLBXOMFwcxjt6tF0TL4lSgAg==
-length: 15295
+edSignature: GtwzCzL09Q8EwbAq+IStEwALaSIn7Kn1+wLxNOB7TZMEpS/W7bEk1Jcu+rBE36fqBS3YO6lAWJGAgriaWlYzAA==
+length: 17534
 -->
