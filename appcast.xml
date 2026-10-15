@@ -6,6 +6,24 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.12.0</title>
+      <pubDate>Thu, 15 Oct 2026 12:46:24 +0000</pubDate>
+      <sparkle:version>65</sparkle:version>
+      <sparkle:shortVersionString>1.12.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[Nori now runs on Windows and Linux, with the same history, diffs, Reviews and Pro as on the Mac. Nothing changes on the Mac in this release.
+
+### Added
+
+- Nori for Windows 10 and 11 on x64: one installer, which asks whether to install Nori for everyone or only for you.
+- Nori for Linux on x86-64: `.deb`, `.rpm` and AppImage packages, for Ubuntu 22.04 or Debian 12 and newer, and current Fedora releases.
+- On Windows and Linux, Settings ▸ Updates offers each new version and installs it, as on the Mac.
+- Pro, the 14-day Pro trial and *Activate in Nori* work on Windows and Linux with the same License.
+- On Windows and Linux, a missing GitHub CLI, GitLab CLI or AI command-line tool links to its official installation guide.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.0/Nori-1.12.0-arm64.zip" sparkle:edSignature="ZcWYZaA6SFs4CPLl145QXq7gjnh2NDz70P4T5kYT+np1AiiGam9JOv4P2KxVSk/4vhtKNlTDBcbRhwBTsgIBBA==" length="13008722" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.11.0</title>
       <pubDate>Wed, 14 Oct 2026 05:25:21 +0000</pubDate>
       <sparkle:version>63</sparkle:version>
@@ -247,6 +265,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 1ETAtjUbHoduD4ir5QSFxQ4fQSYtLehX6XPjVS7LBAbly4xoXgA8PeYSzjsTs+y2m9arjW+n1RjItwfrynnXCA==
-length: 19527
+edSignature: sdAjhjU4nI33b1hVJWBu+HzGq7Gc4prmZbSeT9IMXKBT/l6JLwokcrKE+r8G98H7HNPGqtfajEpG/ZRE1jcUCA==
+length: 21006
 -->
