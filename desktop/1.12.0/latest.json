@@ -1,0 +1,31 @@
+{
+  "version": "1.12.0",
+  "notes": "Nori now runs on Windows and Linux, with the same history, diffs, Reviews and Pro as on the Mac. Nothing changes on the Mac in this release.\n\n### Added\n\n- Nori for Windows 10 and 11 on x64: one installer, which asks whether to install Nori for everyone or only for you.\n- Nori for Linux on x86-64: `.deb`, `.rpm` and AppImage packages, for Ubuntu 22.04 or Debian 12 and newer, and current Fedora releases.\n- On Windows and Linux, Settings ▸ Updates offers each new version and installs it, as on the Mac.\n- Pro, the 14-day Pro trial and *Activate in Nori* work on Windows and Linux with the same License.\n- On Windows and Linux, a missing GitHub CLI, GitLab CLI or AI command-line tool links to its official installation guide.",
+  "pub_date": "2026-10-15T14:09:30Z",
+  "platforms": {
+    "linux-x86_64-appimage": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.0/Nori_1.12.0_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUFnQmlOMytZbWg5OXpwU3pIS3ZYSkVWYnhFM0xLcVkrcm1nVzU2eTJMYTNnb1JvR0FSeW82TXpDR0JFbTJIRjBISXQyNGc3eE5EQjZYNGVHTXVZZHdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDc2MjMwCWZpbGU6Tm9yaV8xLjEyLjBfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjEyLjAKNDAzSXFoTnJjYWZaalNtdWNROW16ZHFuMndMOHVXMHhIbHFUOUZoMldZU3lzZnJzU2lJNUxSVHI2U2Jva21yenJpZnNaTyttd25iUUlRaXhOcU92RFE9PQo="
+    },
+    "linux-x86_64-deb": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.0/Nori_1.12.0_amd64.deb",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUJBWUhzR1p6VGIzM3ByQXQvcVFFdGNUNUtCdHV1ZCtPR1BtMFpHS3ErQmtua1FqRVkzTVo1YWlIRjBBZ0w3VmJpTnZZQjZoWWhOU1lQSnJjbTFlRGdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDc2MjMwCWZpbGU6Tm9yaV8xLjEyLjBfYW1kNjQuZGViCXZlcnNpb246MS4xMi4wCnRUci82aTBDWlFTSklBZ25CMFR6Z1IwQ2hQSUw5bHkvbzhTYVRZbzFZeTJXelpXQ1FJd0VBWGd2SDVtQ2tMZWVERXQvazNRMmdMVzBEMVNxZm9zakJBPT0K"
+    },
+    "linux-x86_64-rpm": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.0/Nori-1.12.0-1.x86_64.rpm",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbU1Eb3dkUitvWEtTY2xOTVBISEkvSGFVZHl0dk1jY0UwRzhXeEdCR1IxRmF1ZXhWYnY2UHV5VWxkS1VFZFFFTW9SYnNIVmFvQ0xYZjAybzB4K3grSEFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDc2MjMwCWZpbGU6Tm9yaS0xLjEyLjAtMS54ODZfNjQucnBtCXZlcnNpb246MS4xMi4wCldFQjRyYjFKaElBRjlNZU9CUVpjNlc1TWdWalllY1VCc1FrYXdQWWhDd1lrZ3BWREF2RnowdmJLYS93MSsxQlMyVjNsZFRkVjJiTUhsMDd3bXgrSkFRPT0K"
+    },
+    "windows-x86_64-nsis": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.0/Nori_1.12.0_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUMrVTdMN0ZldDkwUFcvMmZrWlF2bC9BWkRzOE01QXN6cVVvMVdRQ1RSd2tVV2JEamFMMkpsN0hjdnV2Wkh2eHFjd0lpck4yZ1dZdnMrU3dKdnc2bUFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDc2NjkwCWZpbGU6Tm9yaV8xLjEyLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTIuMApxb2hheGw2bVZOSmdNSDVCWmorSWZJMjNBZGxXVEpzNFRhU0oyQUpKQktqN2MrY0FlWXBlTlNXWmR6SGhRSFM4d2RiYUNwMHNjZmM1RXBrWFp6dkREZz09Cg=="
+    },
+    "linux-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.0/Nori_1.12.0_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUFnQmlOMytZbWg5OXpwU3pIS3ZYSkVWYnhFM0xLcVkrcm1nVzU2eTJMYTNnb1JvR0FSeW82TXpDR0JFbTJIRjBISXQyNGc3eE5EQjZYNGVHTXVZZHdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDc2MjMwCWZpbGU6Tm9yaV8xLjEyLjBfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjEyLjAKNDAzSXFoTnJjYWZaalNtdWNROW16ZHFuMndMOHVXMHhIbHFUOUZoMldZU3lzZnJzU2lJNUxSVHI2U2Jva21yenJpZnNaTyttd25iUUlRaXhOcU92RFE9PQo="
+    },
+    "windows-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.0/Nori_1.12.0_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUMrVTdMN0ZldDkwUFcvMmZrWlF2bC9BWkRzOE01QXN6cVVvMVdRQ1RSd2tVV2JEamFMMkpsN0hjdnV2Wkh2eHFjd0lpck4yZ1dZdnMrU3dKdnc2bUFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMDc2NjkwCWZpbGU6Tm9yaV8xLjEyLjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTIuMApxb2hheGw2bVZOSmdNSDVCWmorSWZJMjNBZGxXVEpzNFRhU0oyQUpKQktqN2MrY0FlWXBlTlNXWmR6SGhRSFM4d2RiYUNwMHNjZmM1RXBrWFp6dkREZz09Cg=="
+    }
+  }
+}

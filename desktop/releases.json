@@ -1,0 +1,11 @@
+{
+  "releases": [
+    {
+      "version": "27",
+      "displayVersion": "1.12.0",
+      "pubDate": "2026-10-15T14:09:30Z",
+      "notes": "Nori now runs on Windows and Linux, with the same history, diffs, Reviews and Pro as on the Mac. Nothing changes on the Mac in this release.\n\n### Added\n\n- Nori for Windows 10 and 11 on x64: one installer, which asks whether to install Nori for everyone or only for you.\n- Nori for Linux on x86-64: `.deb`, `.rpm` and AppImage packages, for Ubuntu 22.04 or Debian 12 and newer, and current Fedora releases.\n- On Windows and Linux, Settings ▸ Updates offers each new version and installs it, as on the Mac.\n- Pro, the 14-day Pro trial and *Activate in Nori* work on Windows and Linux with the same License.\n- On Windows and Linux, a missing GitHub CLI, GitLab CLI or AI command-line tool links to its official installation guide.",
+      "manifestUrl": "https://raw.githubusercontent.com/quentinhermiteau/Nori-releases/main/desktop/1.12.0/latest.json"
+    }
+  ]
+}
