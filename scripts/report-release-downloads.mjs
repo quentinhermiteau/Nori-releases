@@ -1,13 +1,18 @@
 // Sends one snapshot of every published release's download counters to PostHog.
 //
 // GitHub keeps only cumulative counts, with no dates, so a scheduled workflow
-// records them every hour and PostHog derives the daily change. Each release
-// has two archives that count different things:
-//   - Nori-arm64.zip is what meetnori.app/download fetches through the
-//     latest-release URL, so its count is downloads from the website while that
-//     release was the latest one;
-//   - Nori-<version>-arm64.zip is what the Sparkle appcast points to, so its
-//     count is in-app updates to that version.
+// records them every hour and PostHog derives the daily change.
+//
+// `downloads` counts every Mac download of a release. After 1.12.0 a release
+// ships one file, Nori-arm64.dmg, which both meetnori.app/download (through
+// the latest-release URL) and the Sparkle appcast point to, so website
+// downloads and in-app updates can no longer be told apart.
+//
+// Releases up to 1.12.0 still have the versioned zip the appcast pointed to,
+// and keep reporting the split they always did:
+//   - site_downloads: Nori-arm64.zip, the website download before it moved to
+//     the disk image;
+//   - update_downloads: Nori-<version>-arm64.zip, in-app updates.
 // Only aggregate public counters leave GitHub: no person, IP, or device data.
 
 const repository = process.env.GITHUB_REPOSITORY
@@ -38,6 +43,11 @@ const count = (release, matches) => release.assets
   .filter((asset) => matches(asset.name))
   .reduce((total, asset) => total + asset.download_count, 0)
 
+// Checksums and the Windows and Linux installers attached to the same Release
+// are not Mac downloads.
+const isMacDownload = (name) => /^Nori-(?:\d+(?:\.\d+)*-)?arm64\.(?:zip|dmg)$/.test(name)
+const isVersionedZip = (name) => /^Nori-\d+(?:\.\d+)*-arm64\.zip$/.test(name)
+
 const batch = published.map((release, index) => ({
   event: 'github_release_downloads',
   timestamp: snapshotAt,
@@ -49,8 +59,11 @@ const batch = published.map((release, index) => ({
     // 1 is the latest release.
     release_rank: index + 1,
     prerelease: release.prerelease,
-    site_downloads: count(release, (name) => name === 'Nori-arm64.zip'),
-    update_downloads: count(release, (name) => /^Nori-\d+(?:\.\d+)*-arm64\.zip$/.test(name)),
+    downloads: count(release, isMacDownload),
+    ...(release.assets.some((asset) => isVersionedZip(asset.name)) && {
+      site_downloads: count(release, (name) => name === 'Nori-arm64.zip'),
+      update_downloads: count(release, isVersionedZip),
+    }),
   },
 }))
 
@@ -61,8 +74,5 @@ const response = await fetch(`${posthogHost}/batch/`, {
 })
 if (!response.ok) throw new Error(`PostHog batch request failed with ${response.status}.`)
 
-const totals = batch.reduce((sum, { properties }) => ({
-  site: sum.site + properties.site_downloads,
-  updates: sum.updates + properties.update_downloads,
-}), { site: 0, updates: 0 })
-console.log(`Reported ${batch.length} releases at ${snapshotAt}: ${totals.site} website downloads, ${totals.updates} in-app updates.`)
+const total = batch.reduce((sum, { properties }) => sum + properties.downloads, 0)
+console.log(`Reported ${batch.length} releases at ${snapshotAt}: ${total} Mac downloads.`)
