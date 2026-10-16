@@ -6,6 +6,29 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.12.1</title>
+      <pubDate>Fri, 16 Oct 2026 10:36:06 +0000</pubDate>
+      <sparkle:version>67</sparkle:version>
+      <sparkle:shortVersionString>1.12.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[Reviews renders Markdown and shows people by their name; Windows and Linux get fixes to the menu, the command palette and blurred text.
+
+### Added
+
+- Reviews renders descriptions and comments as Markdown, with lists, tables and links, and the description can be edited from Overview when the forge allows it.
+- Reviews shows people by the name on their forge profile instead of their login, which stays on hover; the list search matches either.
+
+### Fixed
+
+- *Merge*, *Rebase* and *Rebase interactive* are greyed out on the checked-out branch's own menu.
+- In a review, ↻ also reloads the diff's discussions, so a comment posted on the forge appears without reopening the request.
+- On Windows and Linux, the application menu's commands can be clicked again, and saving one file repeatedly no longer reloads the whole repository.
+- On Windows and Linux, opening the command palette at a zoom other than 100 % no longer leaves an empty window.
+- On Linux, History and Overview text is sharp again when the system scales text, such as GNOME at 120 %.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.1/Nori-arm64.dmg" sparkle:edSignature="8aNOjoA3Yv+yU4rs8EzVK6HeMof/qGVeOEhbRnrnodNlUW7QjECrzOV82A6lRSHNuOu0nliqUVGJ6PtHtc+1Aw==" length="14654574" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.12.0</title>
       <pubDate>Thu, 15 Oct 2026 12:46:24 +0000</pubDate>
       <sparkle:version>65</sparkle:version>
@@ -265,6 +288,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: sdAjhjU4nI33b1hVJWBu+HzGq7Gc4prmZbSeT9IMXKBT/l6JLwokcrKE+r8G98H7HNPGqtfajEpG/ZRE1jcUCA==
-length: 21006
+edSignature: KqihUmhgZszdfu7wuuwQrZBPihfHDfYSCMugJ2y5AEQqc5lcxeifLIpPRoguva+4zNREwVq8UHzHcmwF+j4hCA==
+length: 22799
 -->

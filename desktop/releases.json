@@ -1,6 +1,13 @@
 {
   "releases": [
     {
+      "version": "67",
+      "displayVersion": "1.12.1",
+      "pubDate": "2026-10-16T10:29:02Z",
+      "notes": "Reviews renders Markdown and shows people by their name; Windows and Linux get fixes to the menu, the command palette and blurred text.\n\n### Added\n\n- Reviews renders descriptions and comments as Markdown, with lists, tables and links, and the description can be edited from Overview when the forge allows it.\n- Reviews shows people by the name on their forge profile instead of their login, which stays on hover; the list search matches either.\n\n### Fixed\n\n- *Merge*, *Rebase* and *Rebase interactive* are greyed out on the checked-out branch's own menu.\n- In a review, ↻ also reloads the diff's discussions, so a comment posted on the forge appears without reopening the request.\n- On Windows and Linux, the application menu's commands can be clicked again, and saving one file repeatedly no longer reloads the whole repository.\n- On Windows and Linux, opening the command palette at a zoom other than 100 % no longer leaves an empty window.\n- On Linux, History and Overview text is sharp again when the system scales text, such as GNOME at 120 %.",
+      "manifestUrl": "https://raw.githubusercontent.com/quentinhermiteau/Nori-releases/main/desktop/1.12.1/latest.json"
+    },
+    {
       "version": "27",
       "displayVersion": "1.12.0",
       "pubDate": "2026-10-15T14:09:30Z",

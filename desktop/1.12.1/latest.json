@@ -1,0 +1,31 @@
+{
+  "version": "1.12.1",
+  "notes": "Reviews renders Markdown and shows people by their name; Windows and Linux get fixes to the menu, the command palette and blurred text.\n\n### Added\n\n- Reviews renders descriptions and comments as Markdown, with lists, tables and links, and the description can be edited from Overview when the forge allows it.\n- Reviews shows people by the name on their forge profile instead of their login, which stays on hover; the list search matches either.\n\n### Fixed\n\n- *Merge*, *Rebase* and *Rebase interactive* are greyed out on the checked-out branch's own menu.\n- In a review, ↻ also reloads the diff's discussions, so a comment posted on the forge appears without reopening the request.\n- On Windows and Linux, the application menu's commands can be clicked again, and saving one file repeatedly no longer reloads the whole repository.\n- On Windows and Linux, opening the command palette at a zoom other than 100 % no longer leaves an empty window.\n- On Linux, History and Overview text is sharp again when the system scales text, such as GNOME at 120 %.",
+  "pub_date": "2026-10-16T10:29:02Z",
+  "platforms": {
+    "linux-x86_64-appimage": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.1/Nori_1.12.1_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbURMSnBIK0NyS2p4MkxmMHE0K2RKNEtBUzgwNmQwanVsUkUyUUNIbFJWQTh6RDhvNHBzKy9OZENHbUxtWEFSeWRSSnlEMG1uOGVYS2RIRk0zb2kyNWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTQ3NjI4CWZpbGU6Tm9yaV8xLjEyLjFfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjEyLjEKR0podlZsblA4MTEzV0tIdDRIR25jVjExQ0lGajdKS1JrZTc4RmFyUzhITEdNQ2p3NklDTWc0N3gwWUJFNkgyck1IUXQ5cXF6STZNVWcxQ1dmQlo2Q1E9PQo="
+    },
+    "linux-x86_64-deb": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.1/Nori_1.12.1_amd64.deb",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUhtYkZ3anhMc0JGalQ2UTB4dlpPTy9Xay9HVFY5VTcvbGVDYkpHMHVMOFNHTEoraXlESDJ3cGxjN3RNUURKb0ZteS80UDl4L1RGeXRLRCt4VUJlS2c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTQ3NjI4CWZpbGU6Tm9yaV8xLjEyLjFfYW1kNjQuZGViCXZlcnNpb246MS4xMi4xCmc0OXkrL0djMERoRUluaUYwcU1CZ1dGSEJzWW9sWUhxOHk0Y0N3blFRM1U2Q05RVlNDNitmd25zNUdiMlRUK0pISzBlNld3SEprOVBaWnY3cEFHQURnPT0K"
+    },
+    "linux-x86_64-rpm": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.1/Nori-1.12.1-1.x86_64.rpm",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUliNE4xSno3S3JGYU9nbUlVVUpzclJMR29VeW50eGZRT1E3c0Flb0hIQmp3bVk0Z1FTNlF6TnZ3YWxYcmRmalBzM1FiRDlJL1U1alpUNFRjN1dzRlFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTQ3NjI4CWZpbGU6Tm9yaS0xLjEyLjEtMS54ODZfNjQucnBtCXZlcnNpb246MS4xMi4xCldaVW5SM3ViQmU0UFVmT290WVpNTTdoM2xXeFdBV0g3QmNXVVNhUDVUTHREdUVtd0I3LzlZUEREMU4zd0JmaUJMTldqRzd5cmt3RHFrWkNIYy9xK0F3PT0K"
+    },
+    "windows-x86_64-nsis": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.1/Nori_1.12.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUpVQlJYOExkNFE3RzE5M1lkVTd6bjRQYkNnRkxUNEV2NGpJNk1ycEp3Qkx2eGx2clVuZ3c1eS9YUkNqeEdZc29UbUN5Si9hd0NhQnJZUGJyYW1jcUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTQ3ODk0CWZpbGU6Tm9yaV8xLjEyLjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTIuMQpSeXRvQlozUXZubVdOMDdiL1RIaC9mY0I3RnJuVkp2L2tEN0IySEh5eFprOGJTZGJwY1JQcC9DblpvOFJNb0NQZk9qaDhNaXZqc041cWhua3lRRnlDQT09Cg=="
+    },
+    "linux-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.1/Nori_1.12.1_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbURMSnBIK0NyS2p4MkxmMHE0K2RKNEtBUzgwNmQwanVsUkUyUUNIbFJWQTh6RDhvNHBzKy9OZENHbUxtWEFSeWRSSnlEMG1uOGVYS2RIRk0zb2kyNWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTQ3NjI4CWZpbGU6Tm9yaV8xLjEyLjFfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjEyLjEKR0podlZsblA4MTEzV0tIdDRIR25jVjExQ0lGajdKS1JrZTc4RmFyUzhITEdNQ2p3NklDTWc0N3gwWUJFNkgyck1IUXQ5cXF6STZNVWcxQ1dmQlo2Q1E9PQo="
+    },
+    "windows-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.12.1/Nori_1.12.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUpVQlJYOExkNFE3RzE5M1lkVTd6bjRQYkNnRkxUNEV2NGpJNk1ycEp3Qkx2eGx2clVuZ3c1eS9YUkNqeEdZc29UbUN5Si9hd0NhQnJZUGJyYW1jcUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkyMTQ3ODk0CWZpbGU6Tm9yaV8xLjEyLjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTIuMQpSeXRvQlozUXZubVdOMDdiL1RIaC9mY0I3RnJuVkp2L2tEN0IySEh5eFprOGJTZGJwY1JQcC9DblpvOFJNb0NQZk9qaDhNaXZqc041cWhua3lRRnlDQT09Cg=="
+    }
+  }
+}
