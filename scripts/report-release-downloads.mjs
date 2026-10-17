@@ -8,6 +8,12 @@
 // the latest-release URL) and the Sparkle appcast point to, so website
 // downloads and in-app updates can no longer be told apart.
 //
+// Releases from 1.12.0 on also carry the Windows and Linux installers, counted
+// apart: windows_downloads (setup .exe) and linux_downloads, the sum of
+// linux_deb_downloads, linux_rpm_downloads and linux_appimage_downloads. The
+// site and the desktop updater feed point to the same files, so these too mix
+// first installs and updates.
+//
 // Releases up to 1.12.0 still have the versioned zip the appcast pointed to,
 // and keep reporting the split they always did:
 //   - site_downloads: Nori-arm64.zip, the website download before it moved to
@@ -43,10 +49,14 @@ const count = (release, matches) => release.assets
   .filter((asset) => matches(asset.name))
   .reduce((total, asset) => total + asset.download_count, 0)
 
-// Checksums and the Windows and Linux installers attached to the same Release
-// are not Mac downloads.
+// Checksums are not downloads of the app.
 const isMacDownload = (name) => /^Nori-(?:\d+(?:\.\d+)*-)?arm64\.(?:zip|dmg)$/.test(name)
 const isVersionedZip = (name) => /^Nori-\d+(?:\.\d+)*-arm64\.zip$/.test(name)
+const isWindowsInstaller = (name) => /^Nori_\d+(?:\.\d+)*_\w+-setup\.exe$/.test(name)
+const isDebPackage = (name) => /^Nori_\d+(?:\.\d+)*_\w+\.deb$/.test(name)
+const isRpmPackage = (name) => /^Nori-\d+(?:\.\d+)*-\d+\.\w+\.rpm$/.test(name)
+const isAppImage = (name) => /^Nori_\d+(?:\.\d+)*_\w+\.AppImage$/.test(name)
+const isDesktopInstaller = (name) => [isWindowsInstaller, isDebPackage, isRpmPackage, isAppImage].some((matches) => matches(name))
 
 const batch = published.map((release, index) => ({
   event: 'github_release_downloads',
@@ -64,6 +74,13 @@ const batch = published.map((release, index) => ({
       site_downloads: count(release, (name) => name === 'Nori-arm64.zip'),
       update_downloads: count(release, isVersionedZip),
     }),
+    ...(release.assets.some((asset) => isDesktopInstaller(asset.name)) && {
+      windows_downloads: count(release, isWindowsInstaller),
+      linux_downloads: count(release, (name) => isDebPackage(name) || isRpmPackage(name) || isAppImage(name)),
+      linux_deb_downloads: count(release, isDebPackage),
+      linux_rpm_downloads: count(release, isRpmPackage),
+      linux_appimage_downloads: count(release, isAppImage),
+    }),
   },
 }))
 
@@ -74,5 +91,5 @@ const response = await fetch(`${posthogHost}/batch/`, {
 })
 if (!response.ok) throw new Error(`PostHog batch request failed with ${response.status}.`)
 
-const total = batch.reduce((sum, { properties }) => sum + properties.downloads, 0)
-console.log(`Reported ${batch.length} releases at ${snapshotAt}: ${total} Mac downloads.`)
+const total = (key) => batch.reduce((sum, { properties }) => sum + (properties[key] ?? 0), 0)
+console.log(`Reported ${batch.length} releases at ${snapshotAt}: ${total('downloads')} Mac, ${total('windows_downloads')} Windows, ${total('linux_downloads')} Linux downloads.`)
