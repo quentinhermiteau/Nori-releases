@@ -1,7 +1,7 @@
 // Sends one snapshot of every published release's download counters to PostHog.
 //
 // GitHub keeps only cumulative counts, with no dates, so a scheduled workflow
-// records them every hour and PostHog derives the daily change.
+// records them every 12 hours and PostHog derives the daily change.
 //
 // `downloads` counts every Mac download of a release. After 1.12.0 a release
 // ships one file, Nori-arm64.dmg, which both meetnori.app/download (through

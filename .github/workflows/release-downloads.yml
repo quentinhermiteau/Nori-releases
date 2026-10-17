@@ -2,9 +2,10 @@ name: Report release downloads
 
 on:
   schedule:
-    # Hourly, off the top of the hour when scheduled runs queue up. GitHub may
-    # delay or drop scheduled runs, so a release also reports on its own.
-    - cron: '17 * * * *'
+    # Every 12 hours (00:17 and 12:17 UTC), off the top of the hour when
+    # scheduled runs queue up. GitHub may delay or drop scheduled runs, so a
+    # release also reports on its own.
+    - cron: '17 */12 * * *'
   # A release publishes its appcast here: report as soon as the new tag exists.
   push:
     branches: [main]
