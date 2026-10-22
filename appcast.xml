@@ -6,6 +6,33 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.13.0</title>
+      <pubDate>Thu, 22 Oct 2026 08:24:14 +0000</pubDate>
+      <sparkle:version>72</sparkle:version>
+      <sparkle:shortVersionString>1.13.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[Nori adds first launch onboarding, reflog recovery, and a faster way to find repositories and manage reviews. Issues and Reviews now show more results, clearer permissions and progress, with better paging for large lists.
+
+### Added
+
+- First launch helps you find and open repository folders.
+- History can show reflog entries and restore a previous repository state.
+- Reviews shows merge progress and required thread resolutions, and the branch toolbar shows the stash count.
+- Press ⌘F (Ctrl+F on Windows and Linux) to search repositories; edit palette filters as you type.
+
+### Changed
+
+- Issues and Reviews load more results as you page through lists, and Reviews shows which actions your permissions allow.
+- Review lists refresh their previews and align timeline markers with comment authors.
+
+### Fixed
+
+- Large GitHub and GitLab review changes load without truncating their patches.
+- Offline forge calls retry, and redundant pushes are skipped.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.13.0/Nori-arm64.dmg" sparkle:edSignature="Ch/6NYrcpvazc3kg7oQZOIs3C2rlqEtvazjS0cflcF3LndsezjMdpNypFjx0bKsMBqx9efK8HsnnCam1fR8BAQ==" length="16023830" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.12.1</title>
       <pubDate>Fri, 16 Oct 2026 10:36:06 +0000</pubDate>
       <sparkle:version>67</sparkle:version>
@@ -288,6 +315,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: KqihUmhgZszdfu7wuuwQrZBPihfHDfYSCMugJ2y5AEQqc5lcxeifLIpPRoguva+4zNREwVq8UHzHcmwF+j4hCA==
-length: 22799
+edSignature: 9630qWbiqRmcLXFlvP7mKWNAQkmo+Z2gxH/QP2j/qP9ToG+hYS2Kf9R4cPPeDEnF0MMPwBePYDPD4R2on1jECw==
+length: 24498
 -->

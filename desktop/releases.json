@@ -1,6 +1,13 @@
 {
   "releases": [
     {
+      "version": "72",
+      "displayVersion": "1.13.0",
+      "pubDate": "2026-10-22T08:19:18Z",
+      "notes": "Nori adds first launch onboarding, reflog recovery, and a faster way to find repositories and manage reviews. Issues and Reviews now show more results, clearer permissions and progress, with better paging for large lists.\n\n### Added\n\n- First launch helps you find and open repository folders.\n- History can show reflog entries and restore a previous repository state.\n- Reviews shows merge progress and required thread resolutions, and the branch toolbar shows the stash count.\n- Press ⌘F (Ctrl+F on Windows and Linux) to search repositories; edit palette filters as you type.\n\n### Changed\n\n- Issues and Reviews load more results as you page through lists, and Reviews shows which actions your permissions allow.\n- Review lists refresh their previews and align timeline markers with comment authors.\n\n### Fixed\n\n- Large GitHub and GitLab review changes load without truncating their patches.\n- Offline forge calls retry, and redundant pushes are skipped.",
+      "manifestUrl": "https://raw.githubusercontent.com/quentinhermiteau/Nori-releases/main/desktop/1.13.0/latest.json"
+    },
+    {
       "version": "67",
       "displayVersion": "1.12.1",
       "pubDate": "2026-10-16T10:29:02Z",
