@@ -6,6 +6,73 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.14.0</title>
+      <pubDate>Mon, 26 Oct 2026 19:43:55 +0000</pubDate>
+      <sparkle:version>73</sparkle:version>
+      <sparkle:shortVersionString>1.14.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[Nori brings Issues to Pro, creates pull and merge requests from Reviews and runs CI from the Checks tab. Text across the app now reads at 4.5:1 or more, in light and dark.
+
+### Added
+
+- Issues, with Pro: read, search and create GitHub and GitLab issues, comment with `@` and `#` completion, set labels and assignees, close or reopen, and *Start work* on a branch named after the issue.
+- Create a pull or merge request from Reviews: choose both branches and open it as a draft if you like. ⌘N in Reviews opens the form.
+- Drop a branch on another, or on HEAD, in the sidebar or the graph to open *Create Pull Request* (*Merge Request* on GitLab) with both branches filled in.
+- Control CI from a review's Checks tab: read job logs, live on GitLab, cancel a run, start a manual job, a pipeline or a workflow, and approve or reject a GitHub deployment.
+- Send Feedback: rate Nori out of five and add a comment for support, from Settings ▸ Feedback, the Help menu or a banner shown after a week of use. Leave your email only if you want a reply.
+- Click a linked worktree in the sidebar to see what it changed since its base (its request's target, else origin's default branch), uncommitted work included, then push it and open its pull or merge request.
+- Each agent's worktree in the sidebar shows its lines added and removed and how far it is ahead of and behind its base, kept current as the agent works.
+
+### Changed
+
+- Settings is a full-window page with a navigation rail instead of a sheet, and the repository stays as you left it beneath.
+- The right panel is always docked beside the graph: clicking a commit or the working copy swaps its content in place, and ◨ or ⌥⌘I shows or hides it.
+- A calmer look: lighter type weights, colour kept for actions, quieter avatars and ref chips in the graph, and polished Issues, Reviews, Settings, dialogs and toolbar panels.
+- Words on coloured pills and badges, branch names in their lane colour and field placeholders now read at 4.5:1 or more; a selected Issues or Reviews row takes the selection's colours.
+- Settings ▸ Appearance previews the open repository's three latest commits, with their authors' avatars.
+- Auto-merge uses the repository's default merge method without asking, and a refusal shows beside the button.
+- On the last conflicted file of a merge, the button reads *Mark resolved and commit merge*: it commits the merge, as it always did, and now says so.
+
+### Fixed
+
+- A branch pushed under another name, or renamed after its first push, shows as pushed in the graph, paired with its upstream.
+- A request shows as merged once its merge completes, even when it finishes later or outside Nori.
+- On GitLab, a failing job that is allowed to fail no longer blocks the merge when pipelines need not succeed.
+- Moving the pointer off an unfolded commit subject in the graph no longer leaves its shadow behind.
+- T3 Code worktrees in the sidebar show T3 Code and the thread's title again, instead of Claude Code and the first prompt.
+- On Windows and Linux, a repository opened through a symbolic link no longer marks its own branch as checked out in another worktree.
+- With files in conflict, *Show working copy* opens on the working copy that holds them, instead of on whatever commit was selected.
+- A pull refused because the branch and its remote both moved on now offers *Pull with rebase*, as a refused push already offered *Pull*.
+- Commands are named the same way everywhere: *Checkout this commit*, *Create branch here*, *Force push*, and the worktree sheet in sentence case.
+- On Windows and Linux, Drop stash in the stash panel's confirmation takes the first click, instead of it only closing the panel.
+- The toolbar's Undo names ⌘Z only while ⌘Z would do the same, and Settings › Shortcuts says it takes back what the undo notice offers.
+- In the Hunks presentation, Stage hunk and Unstage hunk move the whole hunk, instead of saying the selection holds no changed lines.
+- With Git in another language than English, a merge conflict now opens the resolver instead of reading as a failed command, and failed sign-ins and network errors are named again.
+- On Windows and Linux, the confirmation that removes a worktree dims the sheet behind it instead of blacking it out.
+- Issues' connect screen says it lists the repository's issues, not its pull requests.
+- The overview counts 1 branch and 1 contributor in the singular, and a dialog's close cross is named Close rather than a second Cancel.
+- While a merge, rebase or cherry-pick waits for you, its disabled buttons, History's Undo and the AI message button say to finish or abort it, instead of "Another Git command is running".
+- On Windows and Linux, screen readers read a shortened branch name whole in the new branch panel and the rebase banner, instead of split in two.
+- On Windows and Linux, screen readers read each interactive rebase step as its action and commit, stashes as a list, and each Stage button with its file.
+- Windows and Linux: the graph loads past its first 500 commits, and the automatic fetch runs again.
+- Unstaging in a repository without a first commit, and the fallbacks of stash pop and discard, work when the system language is not English.
+- The resolver's key hints say *yours* and *incoming* during a merge, and *Continue* says what it does for each operation.
+- Branch names Git refuses, `HEAD` among them, are caught as you type, and History shortens `Reset to` hashes.
+- Codex shows as signed in without repeating its own status line.
+
+### Security
+
+- An automatic fetch no longer runs a program the repository's own Git settings name, nor its hooks: opening a downloaded folder cannot run code unasked. *Fetch* in the toolbar still runs them.
+- GitLab images hosted on other sites show as links instead of loading, so their host cannot see when you read an issue or a merge request.
+- Clone refuses `fd::` and `ext::` addresses: one ran a command, the other hung for an hour.
+- Opening a repository runs none of its hooks, and links in forge comments open only when they are `http`, `https` or `mailto`.
+- Removing a worktree deletes only what Git removes: a crafted worktree entry can no longer get another folder deleted.
+- Codex runs with its shell, plugins, MCP servers and web search off when Nori asks it for text.
+- On Windows and Linux, the updater installs only a newer build signed for its version, and *Open in Default App* reveals file types it does not know instead of opening them.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.14.0/Nori-arm64.dmg" sparkle:edSignature="Eh9LK0s6xCZUSmhHKzf4RC5gHG5+eQny4h/PVdsWd16ly4R/J0yZt00IWDmXNXSzcPik0kgpQUSno4c0/SmcCQ==" length="17203074" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.13.0</title>
       <pubDate>Thu, 22 Oct 2026 08:24:14 +0000</pubDate>
       <sparkle:version>72</sparkle:version>
@@ -315,6 +382,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 9630qWbiqRmcLXFlvP7mKWNAQkmo+Z2gxH/QP2j/qP9ToG+hYS2Kf9R4cPPeDEnF0MMPwBePYDPD4R2on1jECw==
-length: 24498
+edSignature: pVE5i2b2pF44cbgfX5aD1MZsUhH+Gl2CmJBhgVuwuocDUdiqF2jdgEH33kb1SalHdVF3NbC2OVucBYkkEJ+BDQ==
+length: 31727
 -->
