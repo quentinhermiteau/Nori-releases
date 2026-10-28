@@ -1,6 +1,13 @@
 {
   "releases": [
     {
+      "version": "74",
+      "displayVersion": "1.14.1",
+      "pubDate": "2026-10-28T15:26:25Z",
+      "notes": "Rebase and publish linked worktrees from their inspector, and let your AI tool write pull and merge request descriptions in Reviews.\n\n### Added\n\n- The worktree inspector offers *Commit, Push & PR* when changes remain: it generates a commit message with the configured AI tool, commits all changes, pushes and opens the pull or merge request.\n- Rebase a linked worktree onto its base from its inspector or context menus. Nori fetches first, offers *Stash and Rebase* for local changes and opens the resolver if conflicts stop it.\n- In Reviews, ✦ *Generate with AI* writes a pull or merge request's description when creating or editing it, and fills an empty title on creation. Nothing is posted until you press *Create* or *Save*.\n\n### Changed\n\n- The working copy's file list keeps a minimum width of 282 pt instead of 260 pt, leaving more room for file names.\n- Open a worktree in Nori or your editor from the icons in its inspector's header.\n- License activation and status call a complimentary License a *Premium License*.\n\n### Fixed\n\n- Worktree comparisons and statistics work without a remote, using a local main, master, trunk or develop branch as the base.\n- Returning to a repository tab keeps its inspected worktree and sidebar selections; branches, tags and worktrees removed elsewhere leave the selection when the repository refreshes.",
+      "manifestUrl": "https://raw.githubusercontent.com/quentinhermiteau/Nori-releases/main/desktop/1.14.1/latest.json"
+    },
+    {
       "version": "73",
       "displayVersion": "1.14.0",
       "pubDate": "2026-10-26T19:08:39Z",

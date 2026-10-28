@@ -1,0 +1,31 @@
+{
+  "version": "1.14.1",
+  "notes": "Rebase and publish linked worktrees from their inspector, and let your AI tool write pull and merge request descriptions in Reviews.\n\n### Added\n\n- The worktree inspector offers *Commit, Push & PR* when changes remain: it generates a commit message with the configured AI tool, commits all changes, pushes and opens the pull or merge request.\n- Rebase a linked worktree onto its base from its inspector or context menus. Nori fetches first, offers *Stash and Rebase* for local changes and opens the resolver if conflicts stop it.\n- In Reviews, ✦ *Generate with AI* writes a pull or merge request's description when creating or editing it, and fills an empty title on creation. Nothing is posted until you press *Create* or *Save*.\n\n### Changed\n\n- The working copy's file list keeps a minimum width of 282 pt instead of 260 pt, leaving more room for file names.\n- Open a worktree in Nori or your editor from the icons in its inspector's header.\n- License activation and status call a complimentary License a *Premium License*.\n\n### Fixed\n\n- Worktree comparisons and statistics work without a remote, using a local main, master, trunk or develop branch as the base.\n- Returning to a repository tab keeps its inspected worktree and sidebar selections; branches, tags and worktrees removed elsewhere leave the selection when the repository refreshes.",
+  "pub_date": "2026-10-28T15:26:25Z",
+  "platforms": {
+    "linux-x86_64-appimage": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.14.1/Nori_1.14.1_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUZ0ZWxWTXFIZnNKMDV2NlM5L210SUV1N2JHS283NEVvVnZxbjhxa1p0MTdmL3RlRnN2Rmk3cFNJYlJROUtrYmlOUytzVDdnek5KamVCSzNJWURHR0FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjAyMzU0CWZpbGU6Tm9yaV8xLjE0LjFfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE0LjEKeTJpUGlxWmtOMnFmUllUN2kzODJpc040Z0RQSzZvTFhBWENjTXBtL3NyTExrY01NYWFZbGhJc29aZVJ4QnZNbFlvM2Jvd0JLdkNqeTArajljdWlVQ2c9PQo="
+    },
+    "linux-x86_64-deb": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.14.1/Nori_1.14.1_amd64.deb",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUtTL1JRSmRNQkNWa1JuZUZGdGI2SUtwRjlnUHA4cVRGRXBIejBBeVNFWFJ4dmI0d29OTDhCbzBjTjBJTkZBbkxyNEs3WC96QlMrVlBjNkY4aWxrZ1FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjAyMzU0CWZpbGU6Tm9yaV8xLjE0LjFfYW1kNjQuZGViCXZlcnNpb246MS4xNC4xCldNd005U2ppTm9sYW9Qdm9lbkJ3czB0eU9RQkNRQ2lNSmEvT1plamFnUWlpaUY5Z3hweUZXeXI0Rk9xbytUL3QraERnWkw0bCttUDM0dFduenhtbUJBPT0K"
+    },
+    "linux-x86_64-rpm": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.14.1/Nori-1.14.1-1.x86_64.rpm",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbU5qcFlBQ040Q3lIYk5kb1ZVanBXeWdzZXFEUjQvdEUwa0hiaE1BMnR1UGt5emE3L1o0OWhnb1NYdngxWjV4Q09lbWJUaTZ4VnNQQWNZb0lZbDhWdGc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjAyMzU0CWZpbGU6Tm9yaS0xLjE0LjEtMS54ODZfNjQucnBtCXZlcnNpb246MS4xNC4xCmpGa0pON1NSKzlGRUdqYmtLaE5senFKd1NnSXg5bzRiSFp5Y2VqMGFpRDY1SG5oUDBlUExCTnczdEtXaEFDKzNsb3JXYlAwbTA0OUhGa05MQUhEYUJBPT0K"
+    },
+    "windows-x86_64-nsis": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.14.1/Nori_1.14.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUswaG02VFptclJkSEtqZU5YbEJVQnE3UkViQWJNS2M1LzFaQi9mMXNyNEx1Z0xZUEpBaHh5aElIKzZaYjQ5V0Z3WHMrWjk2Ri82amJOdlc5bk93aXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjAyNDg4CWZpbGU6Tm9yaV8xLjE0LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTQuMQo5S3IvdFoySXE5TGhkSzJLK1c2b2RtbXdDMlN5c3U4UGtuRDRDQVVFeW1BTFVwdEdBZkJDZmVBREFVY2JzQmRkcUVUT29kQjlVVEJCL0hkVE83RkdCdz09Cg=="
+    },
+    "linux-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.14.1/Nori_1.14.1_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUZ0ZWxWTXFIZnNKMDV2NlM5L210SUV1N2JHS283NEVvVnZxbjhxa1p0MTdmL3RlRnN2Rmk3cFNJYlJROUtrYmlOUytzVDdnek5KamVCSzNJWURHR0FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjAyMzU0CWZpbGU6Tm9yaV8xLjE0LjFfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE0LjEKeTJpUGlxWmtOMnFmUllUN2kzODJpc040Z0RQSzZvTFhBWENjTXBtL3NyTExrY01NYWFZbGhJc29aZVJ4QnZNbFlvM2Jvd0JLdkNqeTArajljdWlVQ2c9PQo="
+    },
+    "windows-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.14.1/Nori_1.14.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUswaG02VFptclJkSEtqZU5YbEJVQnE3UkViQWJNS2M1LzFaQi9mMXNyNEx1Z0xZUEpBaHh5aElIKzZaYjQ5V0Z3WHMrWjk2Ri82amJOdlc5bk93aXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzMjAyNDg4CWZpbGU6Tm9yaV8xLjE0LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTQuMQo5S3IvdFoySXE5TGhkSzJLK1c2b2RtbXdDMlN5c3U4UGtuRDRDQVVFeW1BTFVwdEdBZkJDZmVBREFVY2JzQmRkcUVUT29kQjlVVEJCL0hkVE83RkdCdz09Cg=="
+    }
+  }
+}

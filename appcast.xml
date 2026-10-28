@@ -6,6 +6,33 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.14.1</title>
+      <pubDate>Wed, 28 Oct 2026 15:33:58 +0000</pubDate>
+      <sparkle:version>74</sparkle:version>
+      <sparkle:shortVersionString>1.14.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[Rebase and publish linked worktrees from their inspector, and let your AI tool write pull and merge request descriptions in Reviews.
+
+### Added
+
+- The worktree inspector offers *Commit, Push & PR* when changes remain: it generates a commit message with the configured AI tool, commits all changes, pushes and opens the pull or merge request.
+- Rebase a linked worktree onto its base from its inspector or context menus. Nori fetches first, offers *Stash and Rebase* for local changes and opens the resolver if conflicts stop it.
+- In Reviews, ✦ *Generate with AI* writes a pull or merge request's description when creating or editing it, and fills an empty title on creation. Nothing is posted until you press *Create* or *Save*.
+
+### Changed
+
+- The working copy's file list keeps a minimum width of 282 pt instead of 260 pt, leaving more room for file names.
+- Open a worktree in Nori or your editor from the icons in its inspector's header.
+- License activation and status call a complimentary License a *Premium License*.
+
+### Fixed
+
+- Worktree comparisons and statistics work without a remote, using a local main, master, trunk or develop branch as the base.
+- Returning to a repository tab keeps its inspected worktree and sidebar selections; branches, tags and worktrees removed elsewhere leave the selection when the repository refreshes.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.14.1/Nori-arm64.dmg" sparkle:edSignature="1Naxx9RDImvEZrYuYqUGaqHRdTxjSJb74MKeskhgMPDM0rAmddx03EA+YjknhvZH7WuuEn8yUUbiaOGmv+mqCA==" length="17255256" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.14.0</title>
       <pubDate>Mon, 26 Oct 2026 19:43:55 +0000</pubDate>
       <sparkle:version>73</sparkle:version>
@@ -382,6 +409,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: pVE5i2b2pF44cbgfX5aD1MZsUhH+Gl2CmJBhgVuwuocDUdiqF2jdgEH33kb1SalHdVF3NbC2OVucBYkkEJ+BDQ==
-length: 31727
+edSignature: HLPmhOnhXH0bZum4KQl82UVU0QI4m6ljaJE6KPvbkuRCvU2nvHWDq1qhrXc/Agl5iUfxIQSy12GUjwoqqo6JBg==
+length: 33817
 -->
