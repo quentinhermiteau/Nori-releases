@@ -6,6 +6,44 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.15.0</title>
+      <pubDate>Mon, 02 Nov 2026 20:41:57 +0000</pubDate>
+      <sparkle:version>77</sparkle:version>
+      <sparkle:shortVersionString>1.15.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[Reviews and Issues are redrawn, with a merge bar that concludes a request in one place. Discard a whole folder's changes, and on Windows and Linux Nori now runs on the same Git engine as the Mac app.
+
+### Added
+
+- Right-click a folder in the working copy and choose *Discard changes* to discard every change beneath it in that list, after a confirmation and with Undo.
+- In a linked worktree's details, click a file to open its diff against the worktree's base, with committed, staged and new work included.
+- With Pro, right-click a published branch in the sidebar or the graph and choose *Show pull request in Reviews* to open its pull or merge request.
+- In a commit's details, a Reviews button beside each branch opens its pull or merge request; without Pro it is greyed beside the PRO badge.
+- In Reviews, approve or unapprove a request and add it to the merge queue from the merge bar, enable auto-merge from its menu, and write comments with a Preview.
+- Administrators of a GitHub repository can *Merge immediately* past what blocks a request, after a confirmation, never on a draft or a conflict.
+
+### Changed
+
+- Reviews and Issues are redrawn: two-line lists, a request header that leads with its state, a merge bar showing what blocks a merge, and titled fields in forms.
+- On Windows and Linux, Nori runs on the Mac app's own Git engine, so repositories, Reviews and Issues behave the same on every platform.
+- Closing a very large diff frees its memory at once, instead of keeping up to 600 MB for three minutes.
+- Nori needs Git 2.30 or later instead of 2.36, and works in full with the Git that Ubuntu 22.04 and Debian 11 ship.
+
+### Fixed
+
+- A repository whose own Git settings name an SSH command, such as one picking a second SSH key, fetches automatically again instead of failing at every interval.
+- A commit's or a stash's details open at once during a pull, a fetch or a commit, instead of waiting for it to finish.
+- An approved request no longer reads "No review requested", and a bot's approval no longer shows an empty card.
+- On Linux, from the AppImage, Git commands, links and files open without the AppImage's own libraries: branches list and clones work again.
+- A long list of conflicted files scrolls instead of running past the window.
+- On Windows and Linux, opening the closed requests in Reviews no longer leaves a blank window.
+- With a Git older than 2.36, linked worktrees are listed again; with Git 2.30, reading a repository no longer fails.
+- On Windows, settings, Undo history and your License are saved even while an antivirus is scanning the file.
+- On Windows, opening a file in your editor no longer holds up a Git command started at the same moment until the editor closes.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.0/Nori-arm64.dmg" sparkle:edSignature="aGf+cIpIGoHTmBnj30c2MzB3BYK+7/EQetqezBULPCSG56mjdcf6D568+KgUGYztMHJ4eu9JXC+ZERPqExYMBA==" length="17781918" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.14.1</title>
       <pubDate>Wed, 28 Oct 2026 15:33:58 +0000</pubDate>
       <sparkle:version>74</sparkle:version>
@@ -409,6 +447,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: HLPmhOnhXH0bZum4KQl82UVU0QI4m6ljaJE6KPvbkuRCvU2nvHWDq1qhrXc/Agl5iUfxIQSy12GUjwoqqo6JBg==
-length: 33817
+edSignature: yFsAcpL9MsxmEdiKdMOsvveyYmSIw7sIL0avSTPAyZ+HWzvNjjB2GCGLr3Li1ti434P2a+F/8QoaUfqbOnHoAw==
+length: 37282
 -->
