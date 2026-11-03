@@ -1,6 +1,13 @@
 {
   "releases": [
     {
+      "version": "78",
+      "displayVersion": "1.15.1",
+      "pubDate": "2026-11-03T15:53:13Z",
+      "notes": "### Added\n\n- In Reviews, close a pull or merge request without merging it, or reopen a closed one, from the button beside Comment at the end of its Overview.\n- In Reviews, a conflicting request offers *Rebase onto* on its banner. If the forge cannot replay it, the banner says to rebase locally; any other refusal, such as no push access, shows the forge's message.\n\n### Fixed\n\n- On Linux, Nori starts again on Debian 13, Ubuntu 25.10, Fedora 43, Arch and other distributions with a recent libcurl, instead of crashing at launch.\n- In Reviews, a GitLab merge request that is behind or conflicts with its target shows its banner when it opens, not up to 4 seconds later.\n- In Reviews, a GitLab rebase that succeeds after a failed one is no longer reported as refused.",
+      "manifestUrl": "https://raw.githubusercontent.com/quentinhermiteau/Nori-releases/main/desktop/1.15.1/latest.json"
+    },
+    {
       "version": "77",
       "displayVersion": "1.15.0",
       "pubDate": "2026-11-02T20:40:19Z",

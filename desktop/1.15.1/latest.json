@@ -1,0 +1,31 @@
+{
+  "version": "1.15.1",
+  "notes": "### Added\n\n- In Reviews, close a pull or merge request without merging it, or reopen a closed one, from the button beside Comment at the end of its Overview.\n- In Reviews, a conflicting request offers *Rebase onto* on its banner. If the forge cannot replay it, the banner says to rebase locally; any other refusal, such as no push access, shows the forge's message.\n\n### Fixed\n\n- On Linux, Nori starts again on Debian 13, Ubuntu 25.10, Fedora 43, Arch and other distributions with a recent libcurl, instead of crashing at launch.\n- In Reviews, a GitLab merge request that is behind or conflicts with its target shows its banner when it opens, not up to 4 seconds later.\n- In Reviews, a GitLab rebase that succeeds after a failed one is no longer reported as refused.",
+  "pub_date": "2026-11-03T15:53:13Z",
+  "platforms": {
+    "linux-x86_64-appimage": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.1/Nori_1.15.1_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUZlWXZ5Smg1dGJmV3JhV0svVUFSK2tQUSs5SWxKU3FNUUY1YXFCSXIrMXM3ak5rdC9pQmloSU9HT1F6WlM0NitoN252b2hoK0tmaVgyZ3FHSWVZeVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzIyMDc3CWZpbGU6Tm9yaV8xLjE1LjFfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE1LjEKR0xpb1BVQm90NFhmKzJFdU8zQTdlQ0pPbU9tKzBvUGhhR3NiMStJditkMDhhQ0JDaUpva2VGajRIalp4YkVBeGl5OHdheVI2ZnJ6SlBIbG9Kd3loREE9PQo="
+    },
+    "linux-x86_64-deb": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.1/Nori_1.15.1_amd64.deb",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUcwRHVRQmxWcld4U3UwZ0F1NGlBVkJISllKN1p2VjdQVkl3LzJKM3BYaGxsMjFldFJXVitiN0JrYVFsckk2WlpoejBlQ0RMdWl2a3NqQ01SSXlaRmdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzIyMDc3CWZpbGU6Tm9yaV8xLjE1LjFfYW1kNjQuZGViCXZlcnNpb246MS4xNS4xCkM5OUNmS0loVnhmMHNGc3JhYUJnd1d0MDIyS1pMTjJPWWdJUVhPSEF1bm96azVURGRKRmpYWGFiOUg5bGZDbmd0enZKY29LajhjYUk4YlVVNFpmVkRRPT0K"
+    },
+    "linux-x86_64-rpm": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.1/Nori-1.15.1-1.x86_64.rpm",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUpyc2FaZVhYYzYzamNEaDB4TnlRdHJVUy9jeDNGYU5HZU9JeFp2TDZWT3cyMFEwWU41d21CYTZaaGxQNklNQVRaWk80M1JpbTJoMGpwNy9zQThmaFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzIyMDc3CWZpbGU6Tm9yaS0xLjE1LjEtMS54ODZfNjQucnBtCXZlcnNpb246MS4xNS4xClNOWTJIZjYrVkdXek1JcldIbnYrOTQyaWxqNE5NbTJZeFRCL0M1bnN5K2ZzMEtPN0FoV3cxQmY5L21YMEtIYzFmSDd6M2h6NVpFcmd1bC92aDNzeUNnPT0K"
+    },
+    "windows-x86_64-nsis": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.1/Nori_1.15.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUlpNEYxcmJYRnN2Z2xORWlLNUhNaitXejVkTTcwdzBZTiticzc4UmxBK1BrelZGTW9NWDFRVmI1NHRjd2diNS9BamNiOHBpdzBFWENPaTNsQVpZRndrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzIzNTU4CWZpbGU6Tm9yaV8xLjE1LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTUuMQpISDRrMW9ZMTdlN0RIOGtsYjd4eUlqejAwaFhCTGZvOGRtZHZMRzFpS0htS2p1TFVXL3NoWExHWUpSNXVhVm9tRi9Pa0dpWjZHR0k0dm5ObWd6UTZDQT09Cg=="
+    },
+    "linux-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.1/Nori_1.15.1_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUZlWXZ5Smg1dGJmV3JhV0svVUFSK2tQUSs5SWxKU3FNUUY1YXFCSXIrMXM3ak5rdC9pQmloSU9HT1F6WlM0NitoN252b2hoK0tmaVgyZ3FHSWVZeVFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzIyMDc3CWZpbGU6Tm9yaV8xLjE1LjFfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE1LjEKR0xpb1BVQm90NFhmKzJFdU8zQTdlQ0pPbU9tKzBvUGhhR3NiMStJditkMDhhQ0JDaUpva2VGajRIalp4YkVBeGl5OHdheVI2ZnJ6SlBIbG9Kd3loREE9PQo="
+    },
+    "windows-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.1/Nori_1.15.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUlpNEYxcmJYRnN2Z2xORWlLNUhNaitXejVkTTcwdzBZTiticzc4UmxBK1BrelZGTW9NWDFRVmI1NHRjd2diNS9BamNiOHBpdzBFWENPaTNsQVpZRndrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzNzIzNTU4CWZpbGU6Tm9yaV8xLjE1LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTUuMQpISDRrMW9ZMTdlN0RIOGtsYjd4eUlqejAwaFhCTGZvOGRtZHZMRzFpS0htS2p1TFVXL3NoWExHWUpSNXVhVm9tRi9Pa0dpWjZHR0k0dm5ObWd6UTZDQT09Cg=="
+    }
+  }
+}

@@ -6,6 +6,25 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.15.1</title>
+      <pubDate>Tue, 03 Nov 2026 15:57:35 +0000</pubDate>
+      <sparkle:version>78</sparkle:version>
+      <sparkle:shortVersionString>1.15.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[### Added
+
+- In Reviews, close a pull or merge request without merging it, or reopen a closed one, from the button beside Comment at the end of its Overview.
+- In Reviews, a conflicting request offers *Rebase onto* on its banner. If the forge cannot replay it, the banner says to rebase locally; any other refusal, such as no push access, shows the forge's message.
+
+### Fixed
+
+- On Linux, Nori starts again on Debian 13, Ubuntu 25.10, Fedora 43, Arch and other distributions with a recent libcurl, instead of crashing at launch.
+- In Reviews, a GitLab merge request that is behind or conflicts with its target shows its banner when it opens, not up to 4 seconds later.
+- In Reviews, a GitLab rebase that succeeds after a failed one is no longer reported as refused.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.1/Nori-arm64.dmg" sparkle:edSignature="db8xZ5vxxi6pg4zWD62dWWal4AJ52MIgHj5Whc9x5xFHpAHw7qOm+OraeMr56b9xk88tWQgdcd6JzoKpMJdEDA==" length="17796170" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.15.0</title>
       <pubDate>Mon, 02 Nov 2026 20:41:57 +0000</pubDate>
       <sparkle:version>77</sparkle:version>
@@ -447,6 +466,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: yFsAcpL9MsxmEdiKdMOsvveyYmSIw7sIL0avSTPAyZ+HWzvNjjB2GCGLr3Li1ti434P2a+F/8QoaUfqbOnHoAw==
-length: 37282
+edSignature: qKKXD4hEY1MVeu9E+nxUNRr49BnS3objKthsMU798k7pO6On8GpShA4GLgTFFmn7bqJmDcH5eO5lz7z9gvBMCQ==
+length: 38791
 -->
