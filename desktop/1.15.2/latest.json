@@ -1,0 +1,31 @@
+{
+  "version": "1.15.2",
+  "notes": "### Added\n\n- When the repository tabs no longer fit in the window bar, arrows on either side of them page through the hidden tabs.",
+  "pub_date": "2026-11-04T17:44:39Z",
+  "platforms": {
+    "linux-x86_64-appimage": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.2/Nori_1.15.2_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbU9aaldnbnF2bVk4T0ZZUHdiQzlBN043ZWZyZXpSbGVyL2FlTkhNZkNwbFpJZkFxYTFxdmN3RFUrSnpvUXJYRXVtbjlXdHNUSDd2TWZRa25NRGpoL2dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODE1ODMyCWZpbGU6Tm9yaV8xLjE1LjJfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE1LjIKejkvWkQ2TjFhc0MzRkFYVlB1TnpzaHBuWDVkQ3J5dnN0Nks4UWZLWkQveEVsblp6bFhKUk1LaXNJcTB4aitPY0Q0d1hZOHVMMnpEM1JNeTU1VzlKREE9PQo="
+    },
+    "linux-x86_64-deb": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.2/Nori_1.15.2_amd64.deb",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUdCeUJ2ZHc5ZFZrdU53UFRzV3dKNGpQQW9LNVFKK055RFJzamNmeWVrQld6QUdLdGVPWlU2TytnUXhLTWtYM1dyWVpxaGVWUm9JeHRPNXpSOTZ4S2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODE1ODMxCWZpbGU6Tm9yaV8xLjE1LjJfYW1kNjQuZGViCXZlcnNpb246MS4xNS4yCjFXOWpIUzROMEQ0NlQvME1wYVlMRmFFNHZrbnZnZHFxTlJNS3BKT2RTcWxvNWZERy9XR2k2RnpDQXZreWNXNjZvYlczdFZJRzVYYll0cnRaSkJNV0RRPT0K"
+    },
+    "linux-x86_64-rpm": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.2/Nori-1.15.2-1.x86_64.rpm",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbU5La0oxaVlCQ3VuY2dha01MZFJmTGRmZzE0ZWxzOWk4ZzZ6Q281WERLVkNNVUs0bkVCMlQ0dHBmaE1pOVNIOGVBZkdBYWRGMzFDYlA5eFMyMG9lSncwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODE1ODMyCWZpbGU6Tm9yaS0xLjE1LjItMS54ODZfNjQucnBtCXZlcnNpb246MS4xNS4yCkhNTWJlaEg5elFjS0YrU2RBNjBJR1I0ZFlLUFdDc1lmRXhHNStoQlo5MTArMDJjeE5JSlN5a0lOd0tWNnlERzZNRkZZSXdsczZRRzFQR2gveDV2R0NBPT0K"
+    },
+    "windows-x86_64-nsis": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.2/Nori_1.15.2_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUJjU1ZkVUdJekZnVUdtYnhUVzJ3dlcvZkFYKzVaaHhFeGNZT0tNMTBEWE9McTFORDdnZjFwamZnbjZybEFnejNza2I3ZlF5dnY2MkszMytLWURHdEE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODE2MTcwCWZpbGU6Tm9yaV8xLjE1LjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTUuMgpxaE95dWk4Z1Z6L0k3eDlTMit0YnI2eVBQbDArYkpKRlp5YU4vTTd2WFRtNWJjZmxOWG5ONmExU2IxVm9COHViaGVFc2RLUFFlS0dnbFpkc0FucmxDUT09Cg=="
+    },
+    "linux-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.2/Nori_1.15.2_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbU9aaldnbnF2bVk4T0ZZUHdiQzlBN043ZWZyZXpSbGVyL2FlTkhNZkNwbFpJZkFxYTFxdmN3RFUrSnpvUXJYRXVtbjlXdHNUSDd2TWZRa25NRGpoL2dBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODE1ODMyCWZpbGU6Tm9yaV8xLjE1LjJfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE1LjIKejkvWkQ2TjFhc0MzRkFYVlB1TnpzaHBuWDVkQ3J5dnN0Nks4UWZLWkQveEVsblp6bFhKUk1LaXNJcTB4aitPY0Q0d1hZOHVMMnpEM1JNeTU1VzlKREE9PQo="
+    },
+    "windows-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.2/Nori_1.15.2_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUJjU1ZkVUdJekZnVUdtYnhUVzJ3dlcvZkFYKzVaaHhFeGNZT0tNMTBEWE9McTFORDdnZjFwamZnbjZybEFnejNza2I3ZlF5dnY2MkszMytLWURHdEE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzODE2MTcwCWZpbGU6Tm9yaV8xLjE1LjJfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTUuMgpxaE95dWk4Z1Z6L0k3eDlTMit0YnI2eVBQbDArYkpKRlp5YU4vTTd2WFRtNWJjZmxOWG5ONmExU2IxVm9COHViaGVFc2RLUFFlS0dnbFpkc0FucmxDUT09Cg=="
+    }
+  }
+}

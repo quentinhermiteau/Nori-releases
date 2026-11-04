@@ -1,6 +1,13 @@
 {
   "releases": [
     {
+      "version": "79",
+      "displayVersion": "1.15.2",
+      "pubDate": "2026-11-04T17:44:39Z",
+      "notes": "### Added\n\n- When the repository tabs no longer fit in the window bar, arrows on either side of them page through the hidden tabs.",
+      "manifestUrl": "https://raw.githubusercontent.com/quentinhermiteau/Nori-releases/main/desktop/1.15.2/latest.json"
+    },
+    {
       "version": "78",
       "displayVersion": "1.15.1",
       "pubDate": "2026-11-03T15:53:13Z",

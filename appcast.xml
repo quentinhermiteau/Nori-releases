@@ -6,6 +6,18 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.15.2</title>
+      <pubDate>Wed, 04 Nov 2026 18:21:20 +0000</pubDate>
+      <sparkle:version>79</sparkle:version>
+      <sparkle:shortVersionString>1.15.2</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[### Added
+
+- When the repository tabs no longer fit in the window bar, arrows on either side of them page through the hidden tabs.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.15.2/Nori-arm64.dmg" sparkle:edSignature="j7oSsbiRn5s4Kic2P/w5XQgYHOtuFnMwG5UfHsYvbRkolymf2JfaTuPJrxodJdnhoDw1ijZWhdA8a8nN37kSCg==" length="17808370" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.15.1</title>
       <pubDate>Tue, 03 Nov 2026 15:57:35 +0000</pubDate>
       <sparkle:version>78</sparkle:version>
@@ -466,6 +478,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: qKKXD4hEY1MVeu9E+nxUNRr49BnS3objKthsMU798k7pO6On8GpShA4GLgTFFmn7bqJmDcH5eO5lz7z9gvBMCQ==
-length: 38791
+edSignature: P5QzUN2kg/0smkMN750ht+Zys4jEWMB5z4Qf+/DCCxCNN5aVqjyZegn+1Nw5pnstMrxtg7kFOdkhjobwKkEHBQ==
+length: 39664
 -->
