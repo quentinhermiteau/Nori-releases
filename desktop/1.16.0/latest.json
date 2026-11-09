@@ -1,0 +1,31 @@
+{
+  "version": "1.16.0",
+  "notes": "Nori can list your repositories down the left edge of the window, manages remotes and submodules, and shows which repositories have commits to pull.\n\n### Added\n\n- List your open repositories down the left edge of the window instead of in tabs: choose it on the setup's Welcome page or in Settings ▸ Appearance. The list folds to a column of icons and keeps pinning and closing.\n- Add, rename, repoint, fetch and remove remotes in Settings ▸ Repositories, from a remote's folder in the sidebar or from ⌘K. A fork's parent remote is suggested when Nori knows it.\n- Undo a removed remote from its card or from History for 30 days: its URLs, refspecs and the branches' upstreams come back.\n- Right-click an untracked file in the working copy and choose *Ignore* to add it, its extension or one of its folders to the repository's `.gitignore`. A folder that holds tracked files asks first.\n- Submodules get a sidebar section: each one's state, Initialize, Update and Update all, and a double-click opens it in its own tab. Cloning a repository now initializes its submodules.\n- Select a moved submodule to see the commits it brings in rather than two hashes. Files changed inside a submodule are listed above the working copy.\n- Before a push, Nori warns when it records submodule commits no remote has, and can push the submodule's branch first.\n- An amber dot on a repository's tab, row or tile says its branch has commits to pull, including for repositories open in the background.\n- A commit's pull request chip shows the request's number.\n- In Reviews, a draft request cannot be merged until you choose *Mark as ready* in its merge bar.\n\n### Changed\n\n- A remote with nothing fetched yet shows in the sidebar, with Push and Pull, so a branch can be published to a new empty repository.\n- The History columns start narrower, so the commit subject keeps more of the row on a first launch. Drag a column's edge to widen it.\n\n### Removed\n\n- A remote's folder in the sidebar no longer offers to delete every one of its branches from the server; its menu fetches or edits the remote.\n\n### Fixed\n\n- The pull request menu is up to date after you switch tabs, and Reviews finds a repository's forge again after its remote changed.\n- A submodule moved on both sides of a merge is resolved by choosing a commit, instead of being recorded as a file. Discarding a moved submodule now puts it back on its recorded commit.",
+  "pub_date": "2026-11-09T19:56:36Z",
+  "platforms": {
+    "linux-x86_64-appimage": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.16.0/Nori_1.16.0_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUpxcGNqRWU5U2ZMMGJveTdsZjY3azZLOWVqVi9XSE9XN1FZN2sxS0p2REVrSU85Nmp6NnZxbkFCT1BmN1Z2YUpyNitxWXVxVUFORDEvQXBoOXkyYWdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjU1NDE1CWZpbGU6Tm9yaV8xLjE2LjBfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE2LjAKWDJGS2g3L2FEU2RKVmdKNkNkeFo4QktBTXNRL3B1dVdrMG03UWxxQ0FzMVpFMEtWbk1TbDBVYUFZRWFoYktrUDJKVVYxRm1ISVBrR0NWdlQ2aEFQRGc9PQo="
+    },
+    "linux-x86_64-deb": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.16.0/Nori_1.16.0_amd64.deb",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUhETUIrc1hheWYwaGFqeVlaMWtWeU1DOE1vNDNLbWMzazZKQjk4RHlSRlNjOHNzOVRZNUdPd3lZU0kwb2xhb3JXZFdtaytmbU1JUnI4QTdCMFVMVFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjU1NDE1CWZpbGU6Tm9yaV8xLjE2LjBfYW1kNjQuZGViCXZlcnNpb246MS4xNi4wCjRNSFhrYUVscUxEY0ExRVlxL0ZZTVlHdWRQb1VlVGNaTGZaY3NnTmt4eUtjZEtzYUhoaE90OTZOWElsV1dGNTB6a1I3QmZFTndreWFlZmJ4MVR1REFnPT0K"
+    },
+    "linux-x86_64-rpm": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.16.0/Nori-1.16.0-1.x86_64.rpm",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUlrYVhSNnUySlc5YUsvK1hUcFQvQjRla1FhMitkNW9BaGVFZ3N3TS9wWkd4cVBNUEUraHE3R2xtbkxMK1JzUHhSc1pYQmx5WUhETWM1b3Z5dTN0ZEE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjU1NDE1CWZpbGU6Tm9yaS0xLjE2LjAtMS54ODZfNjQucnBtCXZlcnNpb246MS4xNi4wClE1M0pLRUt3eGpqSytEQ01iMldZYnhhSzBVVzBXaFpyQTNQa0xtdGVxaXdvU2J0a3p0SElaLzRVSC9kdTJ1ZmVsNHdYb3pjUk1zZ1hMMjhYTlIzUUR3PT0K"
+    },
+    "windows-x86_64-nsis": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.16.0/Nori_1.16.0_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUNpRUp5VFN6V0tpQWZFK2JvQncxY21BWU9CWEhlcHlRVkNKWXQyUm13Nzlvd2xKZHhPMGJsQlFJL3ZJWE1yOEtYT0VvZHRsYmdkYnlaZ09GWkRmWEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjU2NjEwCWZpbGU6Tm9yaV8xLjE2LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTYuMAo0Rm1pWVh4aHJCMjI2bGdLY0U5dXJWNDFZcER6MElPMlR0NG5sSmhWOE5TRmw1YVZtcS84Rmk5bHQxa21zUHF5RnF1LzNFYWNOV0lSVGZNc2dMNkpDUT09Cg=="
+    },
+    "linux-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.16.0/Nori_1.16.0_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUpxcGNqRWU5U2ZMMGJveTdsZjY3azZLOWVqVi9XSE9XN1FZN2sxS0p2REVrSU85Nmp6NnZxbkFCT1BmN1Z2YUpyNitxWXVxVUFORDEvQXBoOXkyYWdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjU1NDE1CWZpbGU6Tm9yaV8xLjE2LjBfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE2LjAKWDJGS2g3L2FEU2RKVmdKNkNkeFo4QktBTXNRL3B1dVdrMG03UWxxQ0FzMVpFMEtWbk1TbDBVYUFZRWFoYktrUDJKVVYxRm1ISVBrR0NWdlQ2aEFQRGc9PQo="
+    },
+    "windows-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.16.0/Nori_1.16.0_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUNpRUp5VFN6V0tpQWZFK2JvQncxY21BWU9CWEhlcHlRVkNKWXQyUm13Nzlvd2xKZHhPMGJsQlFJL3ZJWE1yOEtYT0VvZHRsYmdkYnlaZ09GWkRmWEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk0MjU2NjEwCWZpbGU6Tm9yaV8xLjE2LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTYuMAo0Rm1pWVh4aHJCMjI2bGdLY0U5dXJWNDFZcER6MElPMlR0NG5sSmhWOE5TRmw1YVZtcS84Rmk5bHQxa21zUHF5RnF1LzNFYWNOV0lSVGZNc2dMNkpDUT09Cg=="
+    }
+  }
+}

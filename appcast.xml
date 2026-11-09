@@ -6,6 +6,43 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.16.0</title>
+      <pubDate>Mon, 09 Nov 2026 20:51:02 +0000</pubDate>
+      <sparkle:version>80</sparkle:version>
+      <sparkle:shortVersionString>1.16.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[Nori can list your repositories down the left edge of the window, manages remotes and submodules, and shows which repositories have commits to pull.
+
+### Added
+
+- List your open repositories down the left edge of the window instead of in tabs: choose it on the setup's Welcome page or in Settings ▸ Appearance. The list folds to a column of icons and keeps pinning and closing.
+- Add, rename, repoint, fetch and remove remotes in Settings ▸ Repositories, from a remote's folder in the sidebar or from ⌘K. A fork's parent remote is suggested when Nori knows it.
+- Undo a removed remote from its card or from History for 30 days: its URLs, refspecs and the branches' upstreams come back.
+- Right-click an untracked file in the working copy and choose *Ignore* to add it, its extension or one of its folders to the repository's `.gitignore`. A folder that holds tracked files asks first.
+- Submodules get a sidebar section: each one's state, Initialize, Update and Update all, and a double-click opens it in its own tab. Cloning a repository now initializes its submodules.
+- Select a moved submodule to see the commits it brings in rather than two hashes. Files changed inside a submodule are listed above the working copy.
+- Before a push, Nori warns when it records submodule commits no remote has, and can push the submodule's branch first.
+- An amber dot on a repository's tab, row or tile says its branch has commits to pull, including for repositories open in the background.
+- A commit's pull request chip shows the request's number.
+- In Reviews, a draft request cannot be merged until you choose *Mark as ready* in its merge bar.
+
+### Changed
+
+- A remote with nothing fetched yet shows in the sidebar, with Push and Pull, so a branch can be published to a new empty repository.
+- The History columns start narrower, so the commit subject keeps more of the row on a first launch. Drag a column's edge to widen it.
+
+### Removed
+
+- A remote's folder in the sidebar no longer offers to delete every one of its branches from the server; its menu fetches or edits the remote.
+
+### Fixed
+
+- The pull request menu is up to date after you switch tabs, and Reviews finds a repository's forge again after its remote changed.
+- A submodule moved on both sides of a merge is resolved by choosing a commit, instead of being recorded as a file. Discarding a moved submodule now puts it back on its recorded commit.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.16.0/Nori-arm64.dmg" sparkle:edSignature="0WdEO3n02BYUWZAGONUoiSztAuqw/kUVe+Yh8VUCU+wMOYJq8/QMw8F1RUhI+8fo2VV/OxEVPZyKpYPCPMjmDQ==" length="18326912" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.15.2</title>
       <pubDate>Wed, 04 Nov 2026 18:21:20 +0000</pubDate>
       <sparkle:version>79</sparkle:version>
@@ -478,6 +515,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: P5QzUN2kg/0smkMN750ht+Zys4jEWMB5z4Qf+/DCCxCNN5aVqjyZegn+1Nw5pnstMrxtg7kFOdkhjobwKkEHBQ==
-length: 39664
+edSignature: oiqdOmHBeWVdHiiDGc1RFHnuCg1Cll9UnCEmmHROjBH1q/rj7Y8HwAkXUb6bB6nbR/a6u1ERCYKP9mSBM+CYBQ==
+length: 42819
 -->
