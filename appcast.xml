@@ -6,6 +6,50 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.17.0</title>
+      <pubDate>Fri, 13 Nov 2026 13:35:01 +0000</pubDate>
+      <sparkle:version>82</sparkle:version>
+      <sparkle:shortVersionString>1.17.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[Reviews gets a full-window mode and a one-click merge, and refreshes read far less: 31 ms instead of 384 on a repository of 86,000 commits.
+
+### Added
+
+- Middle-click a repository in the list down the left edge of the window to close it, as you can a tab.
+- In Reviews, turn an open request back into a draft from the *Draft* checkbox under its title while you rename it. Unticking it marks a draft ready. On GitLab it follows the title's `Draft:` prefix as you type.
+- In Reviews, the arrows button in a request's header gives it the whole window: the list and the sidebar fold away and the header shrinks to one line, so a diff has about three times the room. `Esc` or a merge goes back.
+- Pop, apply or drop a stash from the buttons at the top of its details panel, without going back to its row for a right-click.
+- Hover a worktree in the sidebar to see how much disk it takes, beside its title, agent, branch, changes and path. The size is measured when the card opens, so refreshes stay as fast.
+
+### Changed
+
+- In Reviews, *Merge* merges at once with the repository's default method and the forge's message; its arrow opens the menu to choose the method, the squash and the message.
+- ⌘B shows and hides the sidebar, instead of ⌥⌘S. On Windows and Linux it is Ctrl+B.
+- While you rename a request or an issue, *Cancel* and *Save* sit on the line under the title, beside *Draft*, instead of on a row of their own.
+- In the graph, a branch or tag name too long for its column is cut in its middle instead of at its end, so what tells two `feat/…` branches apart stays in sight.
+- Staging, saving a file or finishing an action no longer re-reads the history when no branch moved: on a repository of 86,000 commits a refresh takes 31 ms instead of 384.
+- Coming back to a repository's tab, or relaunching Nori, shows its history without reading it again when no branch moved: 31 ms instead of 384 on a repository of 86,000 commits.
+- A repository just cloned or checked out no longer re-reads every file at each refresh: 19 ms instead of 240 on a repository of 2,400 files.
+- Nori writes Git's commit-graph, as `git gc` does, for a repository whose history is slow to read: a refresh that reads the history then takes 79 ms instead of 384. `git config core.commitGraph false` turns it off.
+- On Mac, each Git command starts faster: Nori runs Xcode's Git directly instead of through `/usr/bin/git`, 4 ms instead of 11 for the smallest command.
+- Reviews and Issues ask the forge whether a list changed before downloading it again, on GitLab and for GitHub's file lists: an unchanged list of 50 issues costs no download instead of 101 KB.
+- On Windows and Linux, a refresh sends the window 152 KB instead of 3.3 MB when the history has not changed, with 10,000 commits loaded.
+
+### Fixed
+
+- On GitLab, the merge bar shows the project's merge method, such as *Fast-forward merge*, and a *Squash commits* box ticked as the request asks, instead of methods GitLab does not offer.
+- The merge sheet no longer sends a commit message typed for a method that writes no commit, such as a rebase.
+- In Reviews, a request opened just after its target branch moved says within seconds that it must be rebased or conflicts. On GitLab it read as up to date through every refresh until GitLab's own page was opened.
+- On Windows and Linux, a switch that is off in Settings shows its track and knob, and the red button of a confirmation and the commit box are filled, instead of drawn without a background.
+- On Windows and Linux, *Hide sidebar* folds the sidebar away in Reviews and Issues, instead of only once you open another screen.
+- On Windows and Linux, `Esc` closes *Submit Review* and the other sheets of Reviews and Issues as soon as they open, without a click inside first.
+- On Windows and Linux, *Create Pull Request*, *Create Issue* and a description's *Save* show `Ctrl+Enter`, and an issue's *Back* shows `Ctrl+[`, instead of the Mac's keys.
+- On Windows and Linux, Overview keeps the repository's name whole beside a long path, instead of cutting it to its first letter.
+- On Windows and Linux, a greyed-out menu entry says why as soon as the pointer is on it, such as *Cherry-pick* on a merge commit.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.17.0/Nori-arm64.dmg" sparkle:edSignature="Z+9kD+1vG31rwk1n6XujZM7R3TCJQNNxpzRcFgqeT9sw1CdhI+MVrAa4rlxT7KeOMHL3Y81/LqbslwiAZUGaBw==" length="19105846" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.16.0</title>
       <pubDate>Mon, 09 Nov 2026 20:51:02 +0000</pubDate>
       <sparkle:version>80</sparkle:version>
@@ -515,6 +559,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: oiqdOmHBeWVdHiiDGc1RFHnuCg1Cll9UnCEmmHROjBH1q/rj7Y8HwAkXUb6bB6nbR/a6u1ERCYKP9mSBM+CYBQ==
-length: 42819
+edSignature: 7YnQvv17n5BEvOhIDJo+Gptc+Hv2wVntzvlRswK5Qsx9HheQpmlh+U3Zz4lhP6dKM6e7uvwGEWYe4GNKq1l3Bg==
+length: 47776
 -->
