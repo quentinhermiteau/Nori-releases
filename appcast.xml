@@ -6,6 +6,41 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.18.0</title>
+      <pubDate>Tue, 17 Nov 2026 22:51:13 +0000</pubDate>
+      <sparkle:version>83</sparkle:version>
+      <sparkle:shortVersionString>1.18.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[Nori now reviews, tracks and builds on Gitea, Forgejo, Bitbucket Cloud and Azure DevOps, stacks your branches, and sends system notifications.
+
+### Added
+
+- In Reviews, change an open request's target branch from its header: click the target and pick another branch. The diff and commits follow. GitHub and GitLab never move its source branch.
+- Without Pro, a pull request opened from Nori, or the end of a Pro trial, shows one closable line about Pro under the window bar: at most three times, a month apart, and the trial's end once.
+- Stack branches as you create them or afterwards, from a branch's menu or by drag and drop. *Restack* replays those above when one changes, *Push stack* pushes them together, and Undo puts them back.
+- With Pro, *Push & PR* on a stacked branch opens its pull request on the branch below. In Reviews, a request's Overview shows its stack; *Retarget onto main* follows a merge, *Stack on…* stacks a request.
+- A fetch, pull or push refused by an SSH host Nori never connected to offers *Trust Host…*: compare its key fingerprints, then *Trust and Retry* adds it to `known_hosts` and runs the action again. No terminal needed.
+- Reviews, Issues and *Push & PR* work with Gitea and Forgejo, Codeberg included: paste an access token in Settings ▸ Connections and Nori finds which forge the server runs.
+- Reviews and *Push & PR* work with Bitbucket Cloud: paste an Atlassian API token in Settings ▸ Connections.
+- Reviews, Issues and *Push & PR* work with Azure DevOps: name your organization and paste a personal access token in Settings ▸ Connections. Issues are Azure Boards work items; Pipelines shows the builds.
+- Fetch, pull and push reach a Gitea, Forgejo, Bitbucket or Azure DevOps remote over HTTPS with the token pasted in Settings ▸ Connections, with no credential helper to set up.
+- Without Pro, the Reviews and Issues previews show a Gitea, Forgejo or Bitbucket repository's own pull requests or issues too, read once with the token pasted in Settings ▸ Connections.
+- System notifications while Nori is in the background: a Git action done, new commits to pull, a commit message ready, and with Pro a review asked of you, your checks or an issue assigned. Settings ▸ Notifications.
+- With Pro, a notification when someone comments on a pull or merge request you opened or review, showing how the comment starts, and when someone approves yours. On GitHub, GitLab, Gitea, Forgejo and Bitbucket.
+- Reorder the sidebar's sections (branches, tags, stashes, worktrees…) by dragging a header, or with *Move Section Up* and *Down*. The order is the same in every repository; *Reset Section Order* restores it.
+
+### Changed
+
+- The Pro trial starts in one click: type your email, accept the terms, and Pro unlocks at once. Confirm your email from the link we send within 3 days to keep it.
+- Without Pro, the Reviews and Issues previews show your repository's own open pull requests or issues, read once with the GitHub or GitLab CLI you are signed in to.
+
+### Fixed
+
+- In Reviews, the *Viewed* checkbox now works on GitLab merge requests. GitLab's API keeps no viewed state, so Nori remembers it on this computer, and a file that changes after you tick it asks for review again.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.18.0/Nori-arm64.dmg" sparkle:edSignature="RLdh7ZCI58r5wapxGQIE1gZF1xulzkQtoFsU2eF5qSckeWZUGWTcX2YM+KAKj6xwB5CRHEokGpRoBpqmqyxlDg==" length="20688708" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.17.0</title>
       <pubDate>Fri, 13 Nov 2026 13:35:01 +0000</pubDate>
       <sparkle:version>82</sparkle:version>
@@ -559,6 +594,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 7YnQvv17n5BEvOhIDJo+Gptc+Hv2wVntzvlRswK5Qsx9HheQpmlh+U3Zz4lhP6dKM6e7uvwGEWYe4GNKq1l3Bg==
-length: 47776
+edSignature: T4/vtkVi9HXx3mg7WWMnLgxG6q90e4eOWNNxFzoMzxXEZFKkMB1+M5CSpHQxGWQXrEwyVt7fCc4m5aq5/YfgDg==
+length: 51756
 -->
