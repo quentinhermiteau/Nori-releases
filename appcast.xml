@@ -6,6 +6,19 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.18.1</title>
+      <pubDate>Wed, 18 Nov 2026 13:46:48 +0000</pubDate>
+      <sparkle:version>84</sparkle:version>
+      <sparkle:shortVersionString>1.18.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[### Fixed
+
+- Coming back from a full-width request or issue to the list no longer slides its rows over the sidebar or cuts off their checks and dates.
+- Settings ▸ Repositories: a repository whose folder was renamed or moved can be taken off the list with *Remove from list*. Open tabs keep their repository.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.18.1/Nori-arm64.dmg" sparkle:edSignature="fGdtCbdoUyRmdB9bK+cZSLJ2wU+b2hn6re2ydrVxrd0RwXILpubi4w4Udai7aQeEeN5qU7eUauzVkef6btekDA==" length="20693800" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.18.0</title>
       <pubDate>Tue, 17 Nov 2026 22:51:13 +0000</pubDate>
       <sparkle:version>83</sparkle:version>
@@ -594,6 +607,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: T4/vtkVi9HXx3mg7WWMnLgxG6q90e4eOWNNxFzoMzxXEZFKkMB1+M5CSpHQxGWQXrEwyVt7fCc4m5aq5/YfgDg==
-length: 51756
+edSignature: wnF38UfZSxN3+uGY9V9kyerLUt53DyG1rZBVJ8Sbogu9ET76R+FG4uh2j1gXp+Tr5WjHFFlIWfZs2g5/E61OBg==
+length: 52809
 -->

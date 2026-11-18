@@ -1,6 +1,13 @@
 {
   "releases": [
     {
+      "version": "84",
+      "displayVersion": "1.18.1",
+      "pubDate": "2026-11-18T13:31:50Z",
+      "notes": "### Fixed\n\n- Coming back from a full-width request or issue to the list no longer slides its rows over the sidebar or cuts off their checks and dates.\n- Settings ▸ Repositories: a repository whose folder was renamed or moved can be taken off the list with *Remove from list*. Open tabs keep their repository.",
+      "manifestUrl": "https://raw.githubusercontent.com/quentinhermiteau/Nori-releases/main/desktop/1.18.1/latest.json"
+    },
+    {
       "version": "83",
       "displayVersion": "1.18.0",
       "pubDate": "2026-11-17T22:50:11Z",

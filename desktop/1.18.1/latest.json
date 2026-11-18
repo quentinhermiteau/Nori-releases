@@ -1,0 +1,31 @@
+{
+  "version": "1.18.1",
+  "notes": "### Fixed\n\n- Coming back from a full-width request or issue to the list no longer slides its rows over the sidebar or cuts off their checks and dates.\n- Settings ▸ Repositories: a repository whose folder was renamed or moved can be taken off the list with *Remove from list*. Open tabs keep their repository.",
+  "pub_date": "2026-11-18T13:31:50Z",
+  "platforms": {
+    "linux-x86_64-appimage": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.18.1/Nori_1.18.1_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbU9xdnB5TGd1NElabXRHdEIxSytRMUc4N0txZmh6T2xRV2ZTMmNOWU1hTmFlamZ0ZDluUTlLeGlib1NQcEhmS3RmbDNTRVJxYmk0MEgvek5yRUNJL0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDA5NjIxCWZpbGU6Tm9yaV8xLjE4LjFfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE4LjEKZzYxRGM2N0FTbHl4aS9XVWhJNDBtM1puR1dRSm8raEdIWHdYNDJ0ZUZCYlBwQWozQndBZlNjMm5mMU9ZcjdBdXRYNklZRFpxSy8zeWozN1I4dkMrQWc9PQo="
+    },
+    "linux-x86_64-deb": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.18.1/Nori_1.18.1_amd64.deb",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbU9MQmhmTXFpRGllRmFoK21tYUNpT1l2Y1dBS1gwbG9rclkxeWd3OVNMZ3pCd3hzTWhYWWt4RFJhN2ErQjU2MVZnMFlPZUdFZ0dlVFBjTUR2TEZKbEFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDA5NjIxCWZpbGU6Tm9yaV8xLjE4LjFfYW1kNjQuZGViCXZlcnNpb246MS4xOC4xCmQwejJWUlRtcU1qcHRxWUsrd0xZZXlIdEhpWGh1ckNDRkRBZlcwV1RPTmdaTkgxa3BXK0ltSHVHZDhPVmlBWllpUFZJZ0lPMnBVb1A3bGRWdHc0RUJ3PT0K"
+    },
+    "linux-x86_64-rpm": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.18.1/Nori-1.18.1-1.x86_64.rpm",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUMrRHlQV0hwaDNZMW5paVQ2OVdTYmJSdUloK3Q1N1JIKzgySTlzanlmd1M0SGJwT3NXUHBRMEE4dHFGVjJod0svY3Y1R2VTTW5McDZoTmg0RXVGU2drPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDA5NjIxCWZpbGU6Tm9yaS0xLjE4LjEtMS54ODZfNjQucnBtCXZlcnNpb246MS4xOC4xCjZNeXhmN1p1RUp4RFdtR2pCWGpubFhIT2UvOU5WUmhTeDNaL0J6R0dpa1ZBVWFkallqeFkxMWFESmZVSGFrVnQ2T2ZYd3RyUE5mem1sa1JEWXFINkFRPT0K"
+    },
+    "windows-x86_64-nsis": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.18.1/Nori_1.18.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUh2WE5kK0NKUDhQajZRSVNtVFM2OVdQN01Rd0Mydi9HVEpyUkhOQVpNS3VEeEhvSzFENEVsWGFnSEtrbEQ3TXdJWnVGTTByZHljNFJGdmxNUnhjalFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDExNTY3CWZpbGU6Tm9yaV8xLjE4LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTguMQp4Rmo3eVZVV3lUdDVROWdVaGxmcmRjaEhNcFh0clB3cmxMSzRjSmt6Q2RQejU0M29PKzE5K24vSjVPby9SSy82UTdwK08wMjZFei84L295bmx4bnFBQT09Cg=="
+    },
+    "linux-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.18.1/Nori_1.18.1_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbU9xdnB5TGd1NElabXRHdEIxSytRMUc4N0txZmh6T2xRV2ZTMmNOWU1hTmFlamZ0ZDluUTlLeGlib1NQcEhmS3RmbDNTRVJxYmk0MEgvek5yRUNJL0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDA5NjIxCWZpbGU6Tm9yaV8xLjE4LjFfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE4LjEKZzYxRGM2N0FTbHl4aS9XVWhJNDBtM1puR1dRSm8raEdIWHdYNDJ0ZUZCYlBwQWozQndBZlNjMm5mMU9ZcjdBdXRYNklZRFpxSy8zeWozN1I4dkMrQWc9PQo="
+    },
+    "windows-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.18.1/Nori_1.18.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUh2WE5kK0NKUDhQajZRSVNtVFM2OVdQN01Rd0Mydi9HVEpyUkhOQVpNS3VEeEhvSzFENEVsWGFnSEtrbEQ3TXdJWnVGTTByZHljNFJGdmxNUnhjalFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDExNTY3CWZpbGU6Tm9yaV8xLjE4LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTguMQp4Rmo3eVZVV3lUdDVROWdVaGxmcmRjaEhNcFh0clB3cmxMSzRjSmt6Q2RQejU0M29PKzE5K24vSjVPby9SSy82UTdwK08wMjZFei84L295bmx4bnFBQT09Cg=="
+    }
+  }
+}
