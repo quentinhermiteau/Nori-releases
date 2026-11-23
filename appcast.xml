@@ -6,6 +6,18 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.19.1</title>
+      <pubDate>Mon, 23 Nov 2026 18:59:50 +0000</pubDate>
+      <sparkle:version>87</sparkle:version>
+      <sparkle:shortVersionString>1.19.1</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[### Fixed
+
+- Nori no longer quits a few seconds after you follow Jira boards, or when it reads their sprint canvas again.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.1/Nori-arm64.dmg" sparkle:edSignature="4JQIKh3ENTxLAPTISimNoGzWN5kCn1beEea0dTb0B7eQiX4gKkztCTG5eiw6ltPpGyP9efuag1l2Sj/5UcuoBw==" length="21728324" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.19.0</title>
       <pubDate>Mon, 23 Nov 2026 16:31:57 +0000</pubDate>
       <sparkle:version>86</sparkle:version>
@@ -640,6 +652,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: 7GGgtUGHtXWIgNiyt+jH6j8jtIyYgS2OsMe4iJSEocKKu/zjcLa6BGJAcKcIX/Pdc+7qoM5lRgKjBAzPh7LTBA==
-length: 56135
+edSignature: Iz+fxS58bR9l8Zcvur45P6c03cJXlBVZKpO1cJ4YePverk2FH49heg1rnYLL77XGjKH4yYYdmR1sjNWBmW2ABQ==
+length: 56999
 -->

@@ -1,0 +1,31 @@
+{
+  "version": "1.19.1",
+  "notes": "### Fixed\n\n- Nori no longer quits a few seconds after you follow Jira boards, or when it reads their sprint canvas again.",
+  "pub_date": "2026-11-23T17:56:27Z",
+  "platforms": {
+    "linux-x86_64-appimage": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.1/Nori_1.19.1_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUZpbnhrR1V3YnRKT1Zkdm1EeXI1UjA3b2Eva2xCV0pDOTJSZDNxUVJkS0R6V0QzakxpdGFwbHQxM1A3K3dWRW1Oemdlang0djlTN2hkbm5JQlFkb0FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDU3OTE0CWZpbGU6Tm9yaV8xLjE5LjFfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE5LjEKRnIvL2krbkhVTlltQXo5UFY2MmtoU0hmelNRdERpOW05V24rU1pmalRwbnIzZmtrUHQwaFozWWY1dEhYQUpLbFp6VDhOTVdTK0ZUTzM4UGQvQWgzQUE9PQo="
+    },
+    "linux-x86_64-deb": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.1/Nori_1.19.1_amd64.deb",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUUxTzEwQ3lHWG1OSXNuMnUyUFJOeTdsQnBYdzkwVTBBdGRac0x2MjNJT2hyRmN4YWpsQkxzWmtHT21GbDBSVHlvNSs0NTlPa0VuMUUvdnU1MmlzdFFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDU3OTE0CWZpbGU6Tm9yaV8xLjE5LjFfYW1kNjQuZGViCXZlcnNpb246MS4xOS4xCm5sYlBoRWFlbXRHWEFlVFRuKzlGOXBNbzRtODhYZ0lYUWc3K1VGSGtkWWRObTR6SFV2S1hhbVBiWlR0MGhvVFRQYWdPVWU2b1FucTZyeGwyWWpGR0NBPT0K"
+    },
+    "linux-x86_64-rpm": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.1/Nori-1.19.1-1.x86_64.rpm",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbU1tNEJDbGRtc3dYc3NUTGIzNlBybFhoUGZwN3ZCMFhERTdYYVVDTE1VRzhkc2hFMXVLWjd5N2VVODNLYW5NRVRSajNjM2dnbGN3U1I0R2s0SEFHdVFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDU3OTE0CWZpbGU6Tm9yaS0xLjE5LjEtMS54ODZfNjQucnBtCXZlcnNpb246MS4xOS4xCmRIYkhpZ1FGaHZuM2l1S3VpRkVMWG5FVDQxeVdhTXI0cnFxMnNwNk5qYVFzbzhqYkEwMWpDZkltV1NzSzZvK1VDSjdIZ09laXlaVmRreW1HVzd2Y0FRPT0K"
+    },
+    "windows-x86_64-nsis": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.1/Nori_1.19.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUpENThOMEplK0xLV2w0MkJ6eUhNbFY5RkpIZC9GbEMwakloUXlHMVFlOTI0aXYrUG1YbWorVnh1NWJhWEhWK0ZuVERYK0FNdXJ2NkhsUDA0a2pBeUF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDU5NDU5CWZpbGU6Tm9yaV8xLjE5LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTkuMQpaK3Zod2xVbmtOS0xUSWtzb2phSWhHV3kreUsxdE9ZVzVqQURkRkZFdzFCVlFxSmNqOU1nUElyZVE5UDRkaG55TmczS3dpRU9lQmoxT3prY2NaSElEQT09Cg=="
+    },
+    "linux-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.1/Nori_1.19.1_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUZpbnhrR1V3YnRKT1Zkdm1EeXI1UjA3b2Eva2xCV0pDOTJSZDNxUVJkS0R6V0QzakxpdGFwbHQxM1A3K3dWRW1Oemdlang0djlTN2hkbm5JQlFkb0FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDU3OTE0CWZpbGU6Tm9yaV8xLjE5LjFfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE5LjEKRnIvL2krbkhVTlltQXo5UFY2MmtoU0hmelNRdERpOW05V24rU1pmalRwbnIzZmtrUHQwaFozWWY1dEhYQUpLbFp6VDhOTVdTK0ZUTzM4UGQvQWgzQUE9PQo="
+    },
+    "windows-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.1/Nori_1.19.1_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUpENThOMEplK0xLV2w0MkJ6eUhNbFY5RkpIZC9GbEMwakloUXlHMVFlOTI0aXYrUG1YbWorVnh1NWJhWEhWK0ZuVERYK0FNdXJ2NkhsUDA0a2pBeUF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDU5NDU5CWZpbGU6Tm9yaV8xLjE5LjFfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTkuMQpaK3Zod2xVbmtOS0xUSWtzb2phSWhHV3kreUsxdE9ZVzVqQURkRkZFdzFCVlFxSmNqOU1nUElyZVE5UDRkaG55TmczS3dpRU9lQmoxT3prY2NaSElEQT09Cg=="
+    }
+  }
+}

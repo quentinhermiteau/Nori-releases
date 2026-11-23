@@ -1,6 +1,13 @@
 {
   "releases": [
     {
+      "version": "87",
+      "displayVersion": "1.19.1",
+      "pubDate": "2026-11-23T17:56:27Z",
+      "notes": "### Fixed\n\n- Nori no longer quits a few seconds after you follow Jira boards, or when it reads their sprint canvas again.",
+      "manifestUrl": "https://raw.githubusercontent.com/quentinhermiteau/Nori-releases/main/desktop/1.19.1/latest.json"
+    },
+    {
       "version": "86",
       "displayVersion": "1.19.0",
       "pubDate": "2026-11-23T15:44:15Z",
