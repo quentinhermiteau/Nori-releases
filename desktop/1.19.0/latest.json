@@ -1,0 +1,31 @@
+{
+  "version": "1.19.0",
+  "notes": "Issues now follows Jira Cloud boards, with sprints drawn as a canvas, and Nori fits portrait displays 1,080 pt wide.\n\n### Added\n\n- With Pro, Issues follows Jira Cloud boards: connect a site in Settings ▸ Connections with *Sign in with Atlassian* on Mac, or an Atlassian API token, then *Follow a board…* in the Issues sidebar, as many as you like.\n- A board's *Sprint* opens a canvas, a lane per followed board under shared columns, with zoom, minimap and Fit. Its *Backlog* lists the sprints, then the backlog. An issue opens beside them, with *Open in Jira*.\n- Jira's canvas and backlog filter by text, *Mine*, several assignees at once, type, parent and flag, and the canvas splits its lanes by assignee or parent with *Swimlanes*. A kanban board's canvas is its *Board*.\n- Work on Jira issues from Nori: drag a card to another column, change the status or the assignee, edit the summary and the description, comment, and create an issue with *New Issue*.\n- Plan from Nori: move an issue to another sprint or the backlog, or to the top or bottom of its list, from its menu.\n- An opened Jira issue offers *Start work*, a branch named after its key, and its *Development*: its branches, open pull requests and commits. Its *Attachments* show their thumbnails and open in their app.\n- *Jira issue assigned to you*, a new notification in Settings ▸ Notifications, opens the issue. A board's canvas shows its last read at once after a relaunch.\n- Reviews: copy a request's link from its header, and select and copy its branch names, the source branch included. A description's text now selects across its paragraphs and list items.\n- Reviews: the palette finds closed and merged requests, not only the list shown. A request's added and removed lines show beside its Changes tab.\n\n### Changed\n\n- Reviews: a request's pipeline graph is read as the request opens and kept for the next opening, so the Checks tab draws it at once. It no longer jumps from 100 % to its fit.\n\n### Fixed\n\n- Nori fits a portrait display 1,080 pt wide: the window's minimum width is 1,020 pt instead of 1,220. In a narrow window the side panels give back width and the repository list folds to its rail.\n- Notifications after an update: macOS now asks to allow them at Nori's first notification. Before, nothing was sent until *Allow…* was clicked in Settings ▸ Notifications.\n- Reviews: the caret no longer jumps while you write a comment or a reply.\n- Windows and Linux: the commit box no longer runs past the window's edge in a narrow working copy pane. *Skip hooks* moves to a second line instead.",
+  "pub_date": "2026-11-23T15:44:15Z",
+  "platforms": {
+    "linux-x86_64-appimage": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.0/Nori_1.19.0_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUFNdUJha2FkY0JwcHZQL1Uxa0dwRWRJd2NMQnJxQjd4ZlZXYzRqWHZaSlgwNDEyK1pvTzBPekM5VlZEY3REUCt0Uk5QNUp1ajlxRWZoeUVCVVFLa1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDUwNzQ4CWZpbGU6Tm9yaV8xLjE5LjBfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE5LjAKd0svTHBYV0JvU3huRzFmdjNWOFFWTE9DMmJqSWI5UTYycFNFQ2RkNmpUMzlzSmtzNmc4LzJnb1VEekdkWTlINng4S0dWWm5HK0wvNjVST1U4bVhnQUE9PQo="
+    },
+    "linux-x86_64-deb": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.0/Nori_1.19.0_amd64.deb",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUhuYUY5aWdOdVZZQUtLVGo5dml5TXZqQThKSXdPVjlFTWwzR3g3UWJuODVtSVhyMzh5RGFzQ1pMWXhVS0toWUd6Ky90YlVjbDJ2NldSWXJqbFB3UmdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDUwNzQ3CWZpbGU6Tm9yaV8xLjE5LjBfYW1kNjQuZGViCXZlcnNpb246MS4xOS4wClpLYzhzK3ZOb3o5aTFyQzZlTXhuT0ZhVzB0QXhBOHlpODZGSXFiZEsxRHA2NTk2ckFkNnhQK3NUc244Y0cxUzdJazEzYTRNeWRiaG8weTVFeGdjQkFRPT0K"
+    },
+    "linux-x86_64-rpm": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.0/Nori-1.19.0-1.x86_64.rpm",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUJIMWp6WUJ2b2ZVaGo0TmhFWGFNN0tjYmxMVHc4bEErUkQxSmtzNy91OE5CajRhUjVhNStjNitHM1FTREdoaUhpVTU4M0hBRjNZbkUvZmwrR29aSFFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDUwNzQ4CWZpbGU6Tm9yaS0xLjE5LjAtMS54ODZfNjQucnBtCXZlcnNpb246MS4xOS4wClp5QjhVdUo2a01GNkdEVGF5dlkvUW5wYldCeFpiR0g4dGQ3OWpJcUVETXZiMHdGeHVFSzk3Nm1yWEpNQXdqOXkzTU1RSXJKbWpvS0xaTWRvQURYNkF3PT0K"
+    },
+    "windows-x86_64-nsis": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.0/Nori_1.19.0_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUpCc1hZajNGbVpHRXl1cGtFRWk1VUlWNDFGOEYwTWllK0c1RlYxYTdBZFJ6Tk54Y3RNTUhPM2UwLzJrQTZsTjAxelJvTFY0K0k0RzY5NVluR1ErVlFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDUxMzc3CWZpbGU6Tm9yaV8xLjE5LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTkuMApyYnVaUll5QmpsVDNKSGcweVNxa25yQ3RrRUhxbFBlejQvbGdOVElqYkFtYUlOS24ySGgvdGNaNFRkZ2dqRjlFekFMZ3h0aFVSbGROT2JIb2lwRVZDQT09Cg=="
+    },
+    "linux-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.0/Nori_1.19.0_amd64.AppImage",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUFNdUJha2FkY0JwcHZQL1Uxa0dwRWRJd2NMQnJxQjd4ZlZXYzRqWHZaSlgwNDEyK1pvTzBPekM5VlZEY3REUCt0Uk5QNUp1ajlxRWZoeUVCVVFLa1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDUwNzQ4CWZpbGU6Tm9yaV8xLjE5LjBfYW1kNjQuQXBwSW1hZ2UJdmVyc2lvbjoxLjE5LjAKd0svTHBYV0JvU3huRzFmdjNWOFFWTE9DMmJqSWI5UTYycFNFQ2RkNmpUMzlzSmtzNmc4LzJnb1VEekdkWTlINng4S0dWWm5HK0wvNjVST1U4bVhnQUE9PQo="
+    },
+    "windows-x86_64": {
+      "url": "https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.0/Nori_1.19.0_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTU1RZbmZUZ3JtbUpCc1hZajNGbVpHRXl1cGtFRWk1VUlWNDFGOEYwTWllK0c1RlYxYTdBZFJ6Tk54Y3RNTUhPM2UwLzJrQTZsTjAxelJvTFY0K0k0RzY5NVluR1ErVlFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NDUxMzc3CWZpbGU6Tm9yaV8xLjE5LjBfeDY0LXNldHVwLmV4ZQl2ZXJzaW9uOjEuMTkuMApyYnVaUll5QmpsVDNKSGcweVNxa25yQ3RrRUhxbFBlejQvbGdOVElqYkFtYUlOS24ySGgvdGNaNFRkZ2dqRjlFekFMZ3h0aFVSbGROT2JIb2lwRVZDQT09Cg=="
+    }
+  }
+}

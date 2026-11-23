@@ -6,6 +6,39 @@
     <description>Signed update feed for Nori.</description>
     <language>en</language>
     <item>
+      <title>Nori 1.19.0</title>
+      <pubDate>Mon, 23 Nov 2026 16:31:57 +0000</pubDate>
+      <sparkle:version>86</sparkle:version>
+      <sparkle:shortVersionString>1.19.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0.0</sparkle:minimumSystemVersion>
+      <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+      <description sparkle:format="markdown"><![CDATA[Issues now follows Jira Cloud boards, with sprints drawn as a canvas, and Nori fits portrait displays 1,080 pt wide.
+
+### Added
+
+- With Pro, Issues follows Jira Cloud boards: connect a site in Settings ▸ Connections with *Sign in with Atlassian* on Mac, or an Atlassian API token, then *Follow a board…* in the Issues sidebar, as many as you like.
+- A board's *Sprint* opens a canvas, a lane per followed board under shared columns, with zoom, minimap and Fit. Its *Backlog* lists the sprints, then the backlog. An issue opens beside them, with *Open in Jira*.
+- Jira's canvas and backlog filter by text, *Mine*, several assignees at once, type, parent and flag, and the canvas splits its lanes by assignee or parent with *Swimlanes*. A kanban board's canvas is its *Board*.
+- Work on Jira issues from Nori: drag a card to another column, change the status or the assignee, edit the summary and the description, comment, and create an issue with *New Issue*.
+- Plan from Nori: move an issue to another sprint or the backlog, or to the top or bottom of its list, from its menu.
+- An opened Jira issue offers *Start work*, a branch named after its key, and its *Development*: its branches, open pull requests and commits. Its *Attachments* show their thumbnails and open in their app.
+- *Jira issue assigned to you*, a new notification in Settings ▸ Notifications, opens the issue. A board's canvas shows its last read at once after a relaunch.
+- Reviews: copy a request's link from its header, and select and copy its branch names, the source branch included. A description's text now selects across its paragraphs and list items.
+- Reviews: the palette finds closed and merged requests, not only the list shown. A request's added and removed lines show beside its Changes tab.
+
+### Changed
+
+- Reviews: a request's pipeline graph is read as the request opens and kept for the next opening, so the Checks tab draws it at once. It no longer jumps from 100 % to its fit.
+
+### Fixed
+
+- Nori fits a portrait display 1,080 pt wide: the window's minimum width is 1,020 pt instead of 1,220. In a narrow window the side panels give back width and the repository list folds to its rail.
+- Notifications after an update: macOS now asks to allow them at Nori's first notification. Before, nothing was sent until *Allow…* was clicked in Settings ▸ Notifications.
+- Reviews: the caret no longer jumps while you write a comment or a reply.
+- Windows and Linux: the commit box no longer runs past the window's edge in a narrow working copy pane. *Skip hooks* moves to a second line instead.]]></description>
+      <enclosure url="https://github.com/quentinhermiteau/Nori-releases/releases/download/v1.19.0/Nori-arm64.dmg" sparkle:edSignature="EMt1Z2pzfEbQQXHvBkCYL40rO24pwUYq82B4/JlCV7lSQALZxHmqbsx2x+b+T+HhDtDI63TP6R6wYS/heJnFBw==" length="21728726" type="application/octet-stream" sparkle:os="macos" />
+    </item>
+    <item>
       <title>Nori 1.18.1</title>
       <pubDate>Wed, 18 Nov 2026 13:46:48 +0000</pubDate>
       <sparkle:version>84</sparkle:version>
@@ -607,6 +640,6 @@ release also closes the data-loss and security issues found before the public la
   </channel>
 </rss>
 <!-- sparkle-signatures:
-edSignature: wnF38UfZSxN3+uGY9V9kyerLUt53DyG1rZBVJ8Sbogu9ET76R+FG4uh2j1gXp+Tr5WjHFFlIWfZs2g5/E61OBg==
-length: 52809
+edSignature: 7GGgtUGHtXWIgNiyt+jH6j8jtIyYgS2OsMe4iJSEocKKu/zjcLa6BGJAcKcIX/Pdc+7qoM5lRgKjBAzPh7LTBA==
+length: 56135
 -->
